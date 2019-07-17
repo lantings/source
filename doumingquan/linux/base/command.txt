@@ -1,0 +1,17 @@
+centos7
+	systemctl   stop/restart/start   nginx/mysqld/kafka/firewalld
+	netstat -antp 	查看进程及端口
+	tailf  error.log 	动态查看日志
+
+	远程复制
+	scp root@47.94.252.159:/home/data/1.txt   /home/mingquan/
+
+	crontab(分时日月周)
+	crontab -l 
+	crontab -e
+
+	tar -zxvf  ***.gz/***.gz2
+	chmod -R 777 filename
+
+
+
