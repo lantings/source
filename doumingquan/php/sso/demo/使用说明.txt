@@ -1,0 +1,21 @@
+1.配置三个虚拟主机
+www.openpoor.com
+www.myspace.com
+www.mingc.com
+
+假设php web服务器目录为www
+所给文件目录层次为：
+/www/www.openpoor.com
+/www/www.myspace.com
+/www/www.mingc.com
+/www/Des.php
+2、访问www.openpoor.com并登陆。
+可以看到
+www.myspace.com
+www.mingc.com
+都实现的登录。
+
+参考博客：
+
+http://blog.csdn.net/luyaran/article/details/54890036
+https://my.oschina.net/empty125/blog/215942
