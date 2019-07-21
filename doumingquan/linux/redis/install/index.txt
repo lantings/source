@@ -1,0 +1,53 @@
+linux环境下下载以及安装配置
+official website： 	https://redis.io/
+download:	https://redis.io/download
+
+$ wget http://download.redis.io/releases/redis-5.0.5.tar.gz
+$ tar xzf redis-5.0.5.tar.gz
+$ cd redis-5.0.5
+$ make
+
+修改配置文件 redis.conf（以守护线程的方式启动）
+	daemonize no    =>   daemonize yes
+
+启动客户端
+
+	mkdir -p /usr/local/redis
+进入src目录，复制redis-server redis-cli到新建立的文件夹
+	cp ./redis-server /usr/local/redis/
+	cp ./redis-cli /usr/local/redis/
+	cd ..
+	cp redis.conf /usr/local/redis/
+添加开机启动服务
+	vim /etc/systemd/system/redis-server.service
+内容如下(unit,service,install)
+[Unit]
+Description=The redis-server Process Manager
+After=syslog.target network.target
+
+[Service]
+Type=simple
+PIDFile=/var/run/redis_6379.pid
+ExecStart=/usr/local/redis/redis-server /usr/local/redis/redis.conf
+ExecReload=/bin/kill -USR2 $MAINPID
+ExecStop=/bin/kill -SIGINT $MAINPID
+
+[Install]
+WantedBy=multi-user.target
+
+
+设置开机启动：
+	systemctl daemon-reload
+	systemctl start redis-server.service
+	systemctl enable redis-server.service
+
+创建redis命令软连接
+	ln -s /usr/local/redis/redis-cli /usr/bin/redis
+输入redis打开客户端
+
+
+
+
+
+
+
