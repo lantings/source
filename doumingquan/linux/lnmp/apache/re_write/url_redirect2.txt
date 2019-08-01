@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+ RewriteEngine on
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+ RewriteRule ^(.http://15.193.240.72:8189) http://15.75.14.179:8083/ [R=301,L]
+</IfModule>
