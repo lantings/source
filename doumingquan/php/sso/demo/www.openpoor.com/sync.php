@@ -18,7 +18,8 @@ $apps = array(
 <html>  
 <head>  
 <meta charset="UTF-8"/>  
-<?php foreach($apps as $v): ?>  
+<?php foreach($apps as $v): ?> 
+<!-- 使用src进行跨域操作  -->
 <script type="text/javascript" src="http://<?php echo $v.'?code='.$_GET['code'] ?>"></script>  
 <?php endforeach; ?>  
 <title>passport</title>  
