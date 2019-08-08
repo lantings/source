@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-
-
 import hashlib
 
-# -------- md5-----
-
 string = "123456"
-
 
 md5 = hashlib.md5()
 #编码
