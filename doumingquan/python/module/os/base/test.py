@@ -24,6 +24,19 @@ wholepath = os.path.abspath('test.py')  # :获得绝对路径
 print('--whole path---')
 print(wholepath)
 
+#getenv() 获取系统的环境变量
+result = os.getenv('PATH')
+print(result.split(':'))
+
+#rename() 文件或文件夹重命名
+#os.rename('/home/sy/a','/home/sy/alibaba'
+#os.rename('02.txt','002.txt')
+
+#stat() 获取文件或者文件夹的信息
+#result = os.stat('/home/sy/PycharmProject/Python3/10.27/01.py)
+#print(result)
+
+
 
 
 
