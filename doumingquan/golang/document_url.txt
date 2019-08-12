@@ -1,0 +1,14 @@
+
+这个手册很好，推荐一下   
+
+https://devdocs.io/javascript/global_objects/array/indexof
+
+官方文档
+https://golang.google.cn/doc/
+
+
+
+
+
+
+
