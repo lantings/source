@@ -1,0 +1,2577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+<information>
+<param name="CALL_IDENTITY">1564823966_20508_76_0</param>
+<param name="CALLER">13701792026</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 17:19:27</param>
+<param name="CONNECTED_TIME">2019-08-03 17:19:31</param>
+<param name="HANG_TIME">2019-08-03 17:24:36</param>
+<param name="AGENT_CODE">2494</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564825374_20815_76_0</param>
+<param name="CALLER">54148318</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 17:42:55</param>
+<param name="CONNECTED_TIME">2019-08-03 17:42:59</param>
+<param name="HANG_TIME">2019-08-03 17:45:30</param>
+<param name="AGENT_CODE">1953</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564825387_20821_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13564693802</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 17:43:10</param>
+<param name="CONNECTED_TIME">2019-08-03 17:43:16</param>
+<param name="HANG_TIME">2019-08-03 17:46:06</param>
+<param name="AGENT_CODE">1167</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829838_21609_76_0</param>
+<param name="CALLER">18918396252</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:57:19</param>
+<param name="CONNECTED_TIME">2019-08-03 18:57:25</param>
+<param name="HANG_TIME">2019-08-03 19:00:16</param>
+<param name="AGENT_CODE">3080</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829946_21630_76_0</param>
+<param name="CALLER">18616880440</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:59:07</param>
+<param name="CONNECTED_TIME">2019-08-03 18:59:11</param>
+<param name="HANG_TIME">2019-08-03 19:02:09</param>
+<param name="AGENT_CODE">2481</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564822151_20124_76_0</param>
+<param name="CALLER">17717341768</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 16:50:04</param>
+<param name="CONNECTED_TIME">2019-08-03 16:50:07</param>
+<param name="HANG_TIME">2019-08-03 16:53:09</param>
+<param name="AGENT_CODE">3021</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564822120_4242_199_0</param>
+<param name="CALLER">13917083865</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 16:49:32</param>
+<param name="CONNECTED_TIME">2019-08-03 16:49:36</param>
+<param name="HANG_TIME">2019-08-03 16:56:30</param>
+<param name="AGENT_CODE">3201</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564822616_20206_76_0</param>
+<param name="CALLER">13472814381</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 16:56:57</param>
+<param name="CONNECTED_TIME">2019-08-03 16:57:01</param>
+<param name="HANG_TIME">2019-08-03 16:58:32</param>
+<param name="AGENT_CODE">2562</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829821_21607_76_0</param>
+<param name="CALLER">15021557855</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:57:42</param>
+<param name="CONNECTED_TIME">2019-08-03 18:57:46</param>
+<param name="HANG_TIME">2019-08-03 19:00:06</param>
+<param name="AGENT_CODE">1750</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829941_21628_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13651967817</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 18:59:03</param>
+<param name="CONNECTED_TIME">2019-08-03 18:59:10</param>
+<param name="HANG_TIME">2019-08-03 19:00:19</param>
+<param name="AGENT_CODE">3145</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829777_5790_199_0</param>
+<param name="CALLER">13917715695</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:56:48</param>
+<param name="CONNECTED_TIME">2019-08-03 18:56:52</param>
+<param name="HANG_TIME">2019-08-03 19:00:41</param>
+<param name="AGENT_CODE">2668</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829806_5794_199_0</param>
+<param name="CALLER">18651213376</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:56:49</param>
+<param name="CONNECTED_TIME">2019-08-03 18:56:53</param>
+<param name="HANG_TIME">2019-08-03 19:00:43</param>
+<param name="AGENT_CODE">3217</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829955_21632_76_0</param>
+<param name="CALLER">13120915989</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:59:57</param>
+<param name="CONNECTED_TIME">2019-08-03 19:00:03</param>
+<param name="HANG_TIME">2019-08-03 19:01:06</param>
+<param name="AGENT_CODE">2542</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829838_5799_199_0</param>
+<param name="CALLER">13003133368</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:57:52</param>
+<param name="CONNECTED_TIME">2019-08-03 18:57:56</param>
+<param name="HANG_TIME">2019-08-03 19:01:15</param>
+<param name="AGENT_CODE">2498</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829990_21635_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13127877382</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 18:59:54</param>
+<param name="CONNECTED_TIME">2019-08-03 18:59:58</param>
+<param name="HANG_TIME">2019-08-03 19:01:19</param>
+<param name="AGENT_CODE">1167</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564827210_5295_199_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">7</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:13:33</param>
+<param name="CONNECTED_TIME">2019-08-03 19:01:23</param>
+<param name="HANG_TIME">2019-08-03 19:01:24</param>
+<param name="AGENT_CODE">2942</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564830024_21641_76_0</param>
+<param name="CALLER">62279006</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 19:00:25</param>
+<param name="CONNECTED_TIME">2019-08-03 19:00:29</param>
+<param name="HANG_TIME">2019-08-03 19:01:26</param>
+<param name="AGENT_CODE">2813</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564830048_21645_76_0</param>
+<param name="CALLER">15835994772</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 19:01:21</param>
+<param name="CONNECTED_TIME">2019-08-03 19:01:26</param>
+<param name="HANG_TIME">2019-08-03 19:01:47</param>
+<param name="AGENT_CODE">2890</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564828692_5567_199_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">1</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:38:40</param>
+<param name="CONNECTED_TIME">2019-08-03 19:02:04</param>
+<param name="HANG_TIME">2019-08-03 19:02:03</param>
+<param name="AGENT_CODE">2673</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829907_5814_199_0</param>
+<param name="CALLER">13871998833</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:59:05</param>
+<param name="CONNECTED_TIME">2019-08-03 18:59:10</param>
+<param name="HANG_TIME">2019-08-03 19:02:13</param>
+<param name="AGENT_CODE">3198</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829926_21623_76_0</param>
+<param name="CALLER">13795211136</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:58:49</param>
+<param name="CONNECTED_TIME">2019-08-03 18:58:53</param>
+<param name="HANG_TIME">2019-08-03 19:02:47</param>
+<param name="AGENT_CODE">2339</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564830089_21653_76_0</param>
+<param name="CALLER">18845142515</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 19:02:02</param>
+<param name="CONNECTED_TIME">2019-08-03 19:02:06</param>
+<param name="HANG_TIME">2019-08-03 19:03:26</param>
+<param name="AGENT_CODE">3036</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564830044_21644_76_0</param>
+<param name="CALLER">51508275</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 19:00:45</param>
+<param name="CONNECTED_TIME">2019-08-03 19:00:50</param>
+<param name="HANG_TIME">2019-08-03 19:03:43</param>
+<param name="AGENT_CODE">3192</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564829642_5764_199_0</param>
+<param name="CALLER">17501609534</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:54:41</param>
+<param name="CONNECTED_TIME">2019-08-03 18:54:45</param>
+<param name="HANG_TIME">2019-08-03 19:04:00</param>
+<param name="AGENT_CODE">2571</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564828720_5575_199_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">1</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 18:38:41</param>
+<param name="CONNECTED_TIME">2019-08-03 19:04:06</param>
+<param name="HANG_TIME">2019-08-03 19:04:06</param>
+<param name="AGENT_CODE">2853</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564830194_21688_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13310119232</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 19:03:20</param>
+<param name="CONNECTED_TIME">2019-08-03 19:03:32</param>
+<param name="HANG_TIME">2019-08-03 19:04:20</param>
+<param name="AGENT_CODE">1167</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564830669_21767_76_0</param>
+<param name="CALLER">13817902286</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 19:11:13</param>
+<param name="CONNECTED_TIME">2019-08-03 19:11:17</param>
+<param name="HANG_TIME">2019-08-03 19:22:47</param>
+<param name="AGENT_CODE">2488</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564792198_18242_198_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">12320</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 08:29:59</param>
+<param name="CONNECTED_TIME">2019-08-03 08:29:59</param>
+<param name="HANG_TIME">2019-08-03 08:31:19</param>
+<param name="AGENT_CODE">1877</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564832709_22162_76_0</param>
+<param name="CALLER">15196658586</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 19:45:45</param>
+<param name="CONNECTED_TIME">2019-08-03 19:45:49</param>
+<param name="HANG_TIME">2019-08-03 19:50:47</param>
+<param name="AGENT_CODE">3230</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564834595_6630_199_0</param>
+<param name="CALLER">18917917389</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 20:17:26</param>
+<param name="CONNECTED_TIME">2019-08-03 20:17:31</param>
+<param name="HANG_TIME">2019-08-03 20:26:01</param>
+<param name="AGENT_CODE">1149</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564805781_22995_198_0</param>
+<param name="CALLER">18019258913</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 12:16:56</param>
+<param name="CONNECTED_TIME">2019-08-03 12:17:00</param>
+<param name="HANG_TIME">2019-08-03 12:20:15</param>
+<param name="AGENT_CODE">1948</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564805904_23026_198_0</param>
+<param name="CALLER">17625452292</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 12:18:26</param>
+<param name="CONNECTED_TIME">2019-08-03 12:18:31</param>
+<param name="HANG_TIME">2019-08-03 12:20:15</param>
+<param name="AGENT_CODE">1944</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564817802_3113_199_0</param>
+<param name="CALLER">33310159</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 15:37:12</param>
+<param name="CONNECTED_TIME">2019-08-03 15:37:16</param>
+<param name="HANG_TIME">2019-08-03 15:39:02</param>
+<param name="AGENT_CODE">2571</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564819925_19501_76_0</param>
+<param name="CALLER">63078303</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 16:12:06</param>
+<param name="CONNECTED_TIME">2019-08-03 16:12:10</param>
+<param name="HANG_TIME">2019-08-03 16:15:42</param>
+<param name="AGENT_CODE">3145</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795265_19366_198_0</param>
+<param name="CALLER">13681764506</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:21:06</param>
+<param name="CONNECTED_TIME">2019-08-03 09:21:12</param>
+<param name="HANG_TIME">2019-08-03 09:24:50</param>
+<param name="AGENT_CODE">2389</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795119_11706_76_0</param>
+<param name="CALLER">57836442</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:18:50</param>
+<param name="CONNECTED_TIME">2019-08-03 09:18:55</param>
+<param name="HANG_TIME">2019-08-03 09:30:47</param>
+<param name="AGENT_CODE">3192</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564796125_19692_198_0</param>
+<param name="CALLER">13818874287</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:36:11</param>
+<param name="CONNECTED_TIME">2019-08-03 09:36:16</param>
+<param name="HANG_TIME">2019-08-03 09:39:41</param>
+<param name="AGENT_CODE">1680</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564796365_19785_198_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">11</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:40:06</param>
+<param name="CONNECTED_TIME">2019-08-03 09:44:14</param>
+<param name="HANG_TIME">2019-08-03 09:44:15</param>
+<param name="AGENT_CODE">2055</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564796097_19684_198_0</param>
+<param name="CALLER">13601872255</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:35:46</param>
+<param name="CONNECTED_TIME">2019-08-03 09:35:52</param>
+<param name="HANG_TIME">2019-08-03 09:45:56</param>
+<param name="AGENT_CODE">2988</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564796717_19895_198_0</param>
+<param name="CALLER">13801798953</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:45:17</param>
+<param name="CONNECTED_TIME">2019-08-03 09:45:21</param>
+<param name="HANG_TIME">2019-08-03 09:46:18</param>
+<param name="AGENT_CODE">2972</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564796677_19878_198_0</param>
+<param name="CALLER">17721194191</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:45:18</param>
+<param name="CONNECTED_TIME">2019-08-03 09:45:24</param>
+<param name="HANG_TIME">2019-08-03 09:48:04</param>
+<param name="AGENT_CODE">2668</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564796914_12434_76_0</param>
+<param name="CALLER">13262962904</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:49:07</param>
+<param name="CONNECTED_TIME">2019-08-03 09:49:11</param>
+<param name="HANG_TIME">2019-08-03 09:50:37</param>
+<param name="AGENT_CODE">2582</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797028_20023_198_0</param>
+<param name="CALLER">13917698163</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">转接</param>
+<param name="CALL_TIME">2019-08-03 09:50:59</param>
+<param name="CONNECTED_TIME">2019-08-03 09:51:04</param>
+<param name="HANG_TIME">2019-08-03 09:54:36</param>
+<param name="AGENT_CODE">2055</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797851_20323_198_0</param>
+<param name="CALLER">22350442</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:12</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:16</param>
+<param name="HANG_TIME">2019-08-03 10:05:14</param>
+<param name="AGENT_CODE">3059</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797742_20285_198_0</param>
+<param name="CALLER">13818796245</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:02:54</param>
+<param name="CONNECTED_TIME">2019-08-03 10:02:58</param>
+<param name="HANG_TIME">2019-08-03 10:06:39</param>
+<param name="AGENT_CODE">2805</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564798185_12928_76_0</param>
+<param name="CALLER">17621247247</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:10:23</param>
+<param name="CONNECTED_TIME">2019-08-03 10:10:27</param>
+<param name="HANG_TIME">2019-08-03 10:13:20</param>
+<param name="AGENT_CODE">2560</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564800941_21538_198_0</param>
+<param name="CALLER">13817293805</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:56:42</param>
+<param name="CONNECTED_TIME">2019-08-03 10:56:46</param>
+<param name="HANG_TIME">2019-08-03 10:58:46</param>
+<param name="AGENT_CODE">2645</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564801170_14147_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13524202156</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 10:59:33</param>
+<param name="CONNECTED_TIME">2019-08-03 10:59:37</param>
+<param name="HANG_TIME">2019-08-03 11:00:07</param>
+<param name="AGENT_CODE">2582</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564800978_14071_76_0</param>
+<param name="CALLER">13801789731</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:57:08</param>
+<param name="CONNECTED_TIME">2019-08-03 10:57:13</param>
+<param name="HANG_TIME">2019-08-03 11:00:12</param>
+<param name="AGENT_CODE">2360</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564800668_13935_76_0</param>
+<param name="CALLER">17301843675</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:51:08</param>
+<param name="CONNECTED_TIME">2019-08-03 10:51:13</param>
+<param name="HANG_TIME">2019-08-03 11:00:51</param>
+<param name="AGENT_CODE">2320</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564801161_14142_76_0</param>
+<param name="CALLER">13761416315</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 11:00:13</param>
+<param name="CONNECTED_TIME">2019-08-03 11:00:17</param>
+<param name="HANG_TIME">2019-08-03 11:00:54</param>
+<param name="AGENT_CODE">2560</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564801205_14164_76_0</param>
+<param name="CALLER">13834530098</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 11:01:41</param>
+<param name="CONNECTED_TIME">2019-08-03 11:01:45</param>
+<param name="HANG_TIME">2019-08-03 11:05:54</param>
+<param name="AGENT_CODE">2890</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">-1_65535_255_255</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">18918746138</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 11:12:06</param>
+<param name="CONNECTED_TIME">2019-08-03 11:12:29</param>
+<param name="HANG_TIME">2019-08-03 11:12:28</param>
+<param name="AGENT_CODE">1127</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564801855_14364_76_0</param>
+<param name="CALLER">34611128</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 11:10:57</param>
+<param name="CONNECTED_TIME">2019-08-03 11:11:00</param>
+<param name="HANG_TIME">2019-08-03 11:16:45</param>
+<param name="AGENT_CODE">3286</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564802562_14611_76_0</param>
+<param name="CALLER">58508230</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 11:23:27</param>
+<param name="CONNECTED_TIME">2019-08-03 11:23:31</param>
+<param name="HANG_TIME">2019-08-03 11:25:34</param>
+<param name="AGENT_CODE">3230</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564802902_22152_198_0</param>
+<param name="CALLER">13701627746</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 11:28:57</param>
+<param name="CONNECTED_TIME">2019-08-03 11:29:02</param>
+<param name="HANG_TIME">2019-08-03 11:32:18</param>
+<param name="AGENT_CODE">2809</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564807757_16037_76_0</param>
+<param name="CALLER">18019161455</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 12:49:52</param>
+<param name="CONNECTED_TIME">2019-08-03 12:49:57</param>
+<param name="HANG_TIME">2019-08-03 12:53:26</param>
+<param name="AGENT_CODE">1390</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564823016_4429_199_0</param>
+<param name="CALLER">18506164499</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 17:03:37</param>
+<param name="CONNECTED_TIME">2019-08-03 17:03:42</param>
+<param name="HANG_TIME">2019-08-03 17:07:31</param>
+<param name="AGENT_CODE">2066</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564824023_4676_199_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">62338208</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 17:20:26</param>
+<param name="CONNECTED_TIME">2019-08-03 17:20:26</param>
+<param name="HANG_TIME">2019-08-03 17:20:45</param>
+<param name="AGENT_CODE">1224</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564809198_16443_76_0</param>
+<param name="CALLER">18302162724</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 13:13:45</param>
+<param name="CONNECTED_TIME">2019-08-03 13:13:49</param>
+<param name="HANG_TIME">2019-08-03 13:16:55</param>
+<param name="AGENT_CODE">2374</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564809325_868_199_0</param>
+<param name="CALLER">13402110739</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 13:15:54</param>
+<param name="CONNECTED_TIME">2019-08-03 13:15:59</param>
+<param name="HANG_TIME">2019-08-03 13:18:17</param>
+<param name="AGENT_CODE">2612</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564809577_16562_76_0</param>
+<param name="CALLER">13764620537</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 13:20:23</param>
+<param name="CONNECTED_TIME">2019-08-03 13:20:30</param>
+<param name="HANG_TIME">2019-08-03 13:22:38</param>
+<param name="AGENT_CODE">2878</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">-1_65535_255_255</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">18521382267</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 13:28:48</param>
+<param name="CONNECTED_TIME">2019-08-03 13:29:47</param>
+<param name="HANG_TIME">2019-08-03 13:29:48</param>
+<param name="AGENT_CODE">1407</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564809842_1037_199_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">11</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 13:24:04</param>
+<param name="CONNECTED_TIME">2019-08-03 13:39:01</param>
+<param name="HANG_TIME">2019-08-03 13:39:01</param>
+<param name="AGENT_CODE">3304</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564810888_16972_76_0</param>
+<param name="CALLER">18516294887</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 13:41:29</param>
+<param name="CONNECTED_TIME">2019-08-03 13:41:37</param>
+<param name="HANG_TIME">2019-08-03 13:44:08</param>
+<param name="AGENT_CODE">2562</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791164_18031_198_0</param>
+<param name="CALLER">18917801270</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:12:45</param>
+<param name="CONNECTED_TIME">2019-08-03 08:12:49</param>
+<param name="HANG_TIME">2019-08-03 08:15:17</param>
+<param name="AGENT_CODE">3016</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791219_18045_198_0</param>
+<param name="CALLER">18616268832</param>
+<param name="CALLEE">12369</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:39</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:44</param>
+<param name="HANG_TIME">2019-08-03 08:15:25</param>
+<param name="AGENT_CODE">1680</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791027_17998_198_0</param>
+<param name="CALLER">13052308271</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:10:55</param>
+<param name="CONNECTED_TIME">2019-08-03 08:10:59</param>
+<param name="HANG_TIME">2019-08-03 08:15:29</param>
+<param name="AGENT_CODE">2668</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791301_10527_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13564479822</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:03:10</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:13</param>
+<param name="HANG_TIME">2019-08-03 08:15:45</param>
+<param name="AGENT_CODE">3274</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791260_18049_198_0</param>
+<param name="CALLER">18321222518</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:14:52</param>
+<param name="CONNECTED_TIME">2019-08-03 08:14:57</param>
+<param name="HANG_TIME">2019-08-03 08:15:51</param>
+<param name="AGENT_CODE">2942</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791286_10522_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13564667355</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 08:14:48</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:04</param>
+<param name="HANG_TIME">2019-08-03 08:15:55</param>
+<param name="AGENT_CODE">1422</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791096_10476_76_0</param>
+<param name="CALLER">18917332142</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:12:27</param>
+<param name="CONNECTED_TIME">2019-08-03 08:12:30</param>
+<param name="HANG_TIME">2019-08-03 08:15:59</param>
+<param name="AGENT_CODE">2326</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791221_10516_76_0</param>
+<param name="CALLER">13062690431</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:41</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:45</param>
+<param name="HANG_TIME">2019-08-03 08:16:07</param>
+<param name="AGENT_CODE">3261</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791083_18012_198_0</param>
+<param name="CALLER">18603608390</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:12:10</param>
+<param name="CONNECTED_TIME">2019-08-03 08:12:15</param>
+<param name="HANG_TIME">2019-08-03 08:16:16</param>
+<param name="AGENT_CODE">2066</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791153_18027_198_0</param>
+<param name="CALLER">18001861900</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:09</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:13</param>
+<param name="HANG_TIME">2019-08-03 08:16:19</param>
+<param name="AGENT_CODE">3229</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791296_10525_76_0</param>
+<param name="CALLER">18621118031</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:15:29</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:33</param>
+<param name="HANG_TIME">2019-08-03 08:16:22</param>
+<param name="AGENT_CODE">3073</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791147_18026_198_0</param>
+<param name="CALLER">15921185252</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:03</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:07</param>
+<param name="HANG_TIME">2019-08-03 08:16:31</param>
+<param name="AGENT_CODE">2498</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791190_18036_198_0</param>
+<param name="CALLER">13601925081</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:11</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:15</param>
+<param name="HANG_TIME">2019-08-03 08:16:34</param>
+<param name="AGENT_CODE">1220</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791085_10473_76_0</param>
+<param name="CALLER">13816026568</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:11:25</param>
+<param name="CONNECTED_TIME">2019-08-03 08:11:29</param>
+<param name="HANG_TIME">2019-08-03 08:16:45</param>
+<param name="AGENT_CODE">2570</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791117_18020_198_0</param>
+<param name="CALLER">18001692509</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:12:36</param>
+<param name="CONNECTED_TIME">2019-08-03 08:12:41</param>
+<param name="HANG_TIME">2019-08-03 08:17:01</param>
+<param name="AGENT_CODE">3198</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791227_18047_198_0</param>
+<param name="CALLER">65232850</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:48</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:52</param>
+<param name="HANG_TIME">2019-08-03 08:17:06</param>
+<param name="AGENT_CODE">2966</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791291_10524_76_0</param>
+<param name="CALLER">65010121</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:14:53</param>
+<param name="CONNECTED_TIME">2019-08-03 08:14:57</param>
+<param name="HANG_TIME">2019-08-03 08:17:08</param>
+<param name="AGENT_CODE">3301</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791191_18037_198_0</param>
+<param name="CALLER">13501767738</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:12</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:16</param>
+<param name="HANG_TIME">2019-08-03 08:17:08</param>
+<param name="AGENT_CODE">1749</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564790794_17925_198_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">11</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:07:13</param>
+<param name="CONNECTED_TIME">2019-08-03 08:17:14</param>
+<param name="HANG_TIME">2019-08-03 08:17:15</param>
+<param name="AGENT_CODE">2055</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791005_10448_76_0</param>
+<param name="CALLER">13916039051</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:10:38</param>
+<param name="CONNECTED_TIME">2019-08-03 08:10:42</param>
+<param name="HANG_TIME">2019-08-03 08:17:30</param>
+<param name="AGENT_CODE">2974</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791314_10530_76_0</param>
+<param name="CALLER">13916618491</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:15:49</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:54</param>
+<param name="HANG_TIME">2019-08-03 08:17:31</param>
+<param name="AGENT_CODE">3145</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564790629_10357_76_0</param>
+<param name="CALLER">19821129334</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:03:49</param>
+<param name="CONNECTED_TIME">2019-08-03 08:03:54</param>
+<param name="HANG_TIME">2019-08-03 08:17:40</param>
+<param name="AGENT_CODE">1655</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791194_10503_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">65165259</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 08:13:14</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:28</param>
+<param name="HANG_TIME">2019-08-03 08:17:44</param>
+<param name="AGENT_CODE">1167</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791080_18009_198_0</param>
+<param name="CALLER">13564232687</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:11:21</param>
+<param name="CONNECTED_TIME">2019-08-03 08:11:25</param>
+<param name="HANG_TIME">2019-08-03 08:17:45</param>
+<param name="AGENT_CODE">3059</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791122_10479_76_0</param>
+<param name="CALLER">13901995659</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:24</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:28</param>
+<param name="HANG_TIME">2019-08-03 08:17:49</param>
+<param name="AGENT_CODE">3116</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564790924_17960_198_0</param>
+<param name="CALLER">18621922921</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:09:51</param>
+<param name="CONNECTED_TIME">2019-08-03 08:09:55</param>
+<param name="HANG_TIME">2019-08-03 08:17:50</param>
+<param name="AGENT_CODE">2853</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791163_10492_76_0</param>
+<param name="CALLER">18621881883</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:16</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:20</param>
+<param name="HANG_TIME">2019-08-03 08:17:49</param>
+<param name="AGENT_CODE">2572</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791394_18070_198_0</param>
+<param name="CALLER">13482388432</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:17:19</param>
+<param name="CONNECTED_TIME">2019-08-03 08:17:23</param>
+<param name="HANG_TIME">2019-08-03 08:17:50</param>
+<param name="AGENT_CODE">3016</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791299_18054_198_0</param>
+<param name="CALLER">13386252579</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:15:30</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:34</param>
+<param name="HANG_TIME">2019-08-03 08:17:54</param>
+<param name="AGENT_CODE">1889</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791265_10520_76_0</param>
+<param name="CALLER">13651920054</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:15:08</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:12</param>
+<param name="HANG_TIME">2019-08-03 08:17:57</param>
+<param name="AGENT_CODE">3245</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791299_10526_76_0</param>
+<param name="CALLER">50854403</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:15:26</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:31</param>
+<param name="HANG_TIME">2019-08-03 08:18:03</param>
+<param name="AGENT_CODE">2542</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791338_10534_76_0</param>
+<param name="CALLER">13761846237</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:15:39</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:43</param>
+<param name="HANG_TIME">2019-08-03 08:18:03</param>
+<param name="AGENT_CODE">2813</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791405_18075_198_0</param>
+<param name="CALLER">18870120855</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:16:45</param>
+<param name="CONNECTED_TIME">2019-08-03 08:16:49</param>
+<param name="HANG_TIME">2019-08-03 08:18:05</param>
+<param name="AGENT_CODE">2972</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791328_10532_76_0</param>
+<param name="CALLER">13681778990</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:15:30</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:34</param>
+<param name="HANG_TIME">2019-08-03 08:18:11</param>
+<param name="AGENT_CODE">2151</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791388_18069_198_0</param>
+<param name="CALLER">67699201</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:16:28</param>
+<param name="CONNECTED_TIME">2019-08-03 08:16:32</param>
+<param name="HANG_TIME">2019-08-03 08:18:22</param>
+<param name="AGENT_CODE">2911</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564790905_17955_198_0</param>
+<param name="CALLER">13301731303</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">转接</param>
+<param name="CALL_TIME">2019-08-03 08:09:02</param>
+<param name="CONNECTED_TIME">2019-08-03 08:09:07</param>
+<param name="HANG_TIME">2019-08-03 08:18:29</param>
+<param name="AGENT_CODE">2988</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791477_10561_76_0</param>
+<param name="CALLER">56658909</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:18:32</param>
+<param name="CONNECTED_TIME">2019-08-03 08:18:36</param>
+<param name="HANG_TIME">2019-08-03 08:18:36</param>
+<param name="AGENT_CODE">2928</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791396_18071_198_0</param>
+<param name="CALLER">13166481438</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:17:10</param>
+<param name="CONNECTED_TIME">2019-08-03 08:17:14</param>
+<param name="HANG_TIME">2019-08-03 08:18:41</param>
+<param name="AGENT_CODE">3302</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791133_18022_198_0</param>
+<param name="CALLER">18019070683</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:12:14</param>
+<param name="CONNECTED_TIME">2019-08-03 08:12:18</param>
+<param name="HANG_TIME">2019-08-03 08:18:41</param>
+<param name="AGENT_CODE">2810</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791303_18056_198_0</param>
+<param name="CALLER">16602119315</param>
+<param name="CALLEE">64440216</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:15:05</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:09</param>
+<param name="HANG_TIME">2019-08-03 08:18:45</param>
+<param name="AGENT_CODE">2330</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791308_10529_76_0</param>
+<param name="CALLER">15821312497</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:15:10</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:14</param>
+<param name="HANG_TIME">2019-08-03 08:18:47</param>
+<param name="AGENT_CODE">2593</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564790929_17964_198_0</param>
+<param name="CALLER">18057699506</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:09:23</param>
+<param name="CONNECTED_TIME">2019-08-03 08:09:29</param>
+<param name="HANG_TIME">2019-08-03 08:19:07</param>
+<param name="AGENT_CODE">1754</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791288_10523_76_0</param>
+<param name="CALLER">18783218977</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">转接</param>
+<param name="CALL_TIME">2019-08-03 08:15:17</param>
+<param name="CONNECTED_TIME">2019-08-03 08:15:21</param>
+<param name="HANG_TIME">2019-08-03 08:19:15</param>
+<param name="AGENT_CODE">2582</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791469_10560_76_0</param>
+<param name="CALLER">65568687</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:17:50</param>
+<param name="CONNECTED_TIME">2019-08-03 08:17:54</param>
+<param name="HANG_TIME">2019-08-03 08:19:18</param>
+<param name="AGENT_CODE">3278</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791388_10544_76_0</param>
+<param name="CALLER">13345204110</param>
+<param name="CALLEE">12369</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:16:53</param>
+<param name="CONNECTED_TIME">2019-08-03 08:16:58</param>
+<param name="HANG_TIME">2019-08-03 08:19:26</param>
+<param name="AGENT_CODE">2560</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791214_18042_198_0</param>
+<param name="CALLER">13032127957</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:36</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:40</param>
+<param name="HANG_TIME">2019-08-03 08:19:28</param>
+<param name="AGENT_CODE">2145</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791191_18038_198_0</param>
+<param name="CALLER">18918517212</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:11</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:17</param>
+<param name="HANG_TIME">2019-08-03 08:19:29</param>
+<param name="AGENT_CODE">1994</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791215_18044_198_0</param>
+<param name="CALLER">62480905</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:36</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:40</param>
+<param name="HANG_TIME">2019-08-03 08:19:33</param>
+<param name="AGENT_CODE">2389</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791438_18079_198_0</param>
+<param name="CALLER">13817192161</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:17:17</param>
+<param name="CONNECTED_TIME">2019-08-03 08:17:22</param>
+<param name="HANG_TIME">2019-08-03 08:19:45</param>
+<param name="AGENT_CODE">1697</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791252_18048_198_0</param>
+<param name="CALLER">18728528676</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:14:13</param>
+<param name="CONNECTED_TIME">2019-08-03 08:14:18</param>
+<param name="HANG_TIME">2019-08-03 08:19:48</param>
+<param name="AGENT_CODE">2844</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791537_10579_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13801821368</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 08:18:59</param>
+<param name="CONNECTED_TIME">2019-08-03 08:19:07</param>
+<param name="HANG_TIME">2019-08-03 08:19:56</param>
+<param name="AGENT_CODE">1422</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791449_10555_76_0</param>
+<param name="CALLER">19916793780</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:17:30</param>
+<param name="CONNECTED_TIME">2019-08-03 08:17:35</param>
+<param name="HANG_TIME">2019-08-03 08:20:06</param>
+<param name="AGENT_CODE">2873</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791413_18076_198_0</param>
+<param name="CALLER">18601795031</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:17:25</param>
+<param name="CONNECTED_TIME">2019-08-03 08:17:30</param>
+<param name="HANG_TIME">2019-08-03 08:20:12</param>
+<param name="AGENT_CODE">1944</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791440_10554_76_0</param>
+<param name="CALLER">18502193810</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:17:21</param>
+<param name="CONNECTED_TIME">2019-08-03 08:17:26</param>
+<param name="HANG_TIME">2019-08-03 08:20:13</param>
+<param name="AGENT_CODE">3036</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791176_10494_76_0</param>
+<param name="CALLER">13916542493</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:13:41</param>
+<param name="CONNECTED_TIME">2019-08-03 08:13:46</param>
+<param name="HANG_TIME">2019-08-03 08:20:13</param>
+<param name="AGENT_CODE">1376</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791541_10581_76_0</param>
+<param name="CALLER">13311682578</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:19:04</param>
+<param name="CONNECTED_TIME">2019-08-03 08:19:08</param>
+<param name="HANG_TIME">2019-08-03 08:20:17</param>
+<param name="AGENT_CODE">3021</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564791349_10537_76_0</param>
+<param name="CALLER">18916528619</param>
+<param name="CALLEE">12369</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 08:16:21</param>
+<param name="CONNECTED_TIME">2019-08-03 08:16:25</param>
+<param name="HANG_TIME">2019-08-03 08:20:25</param>
+<param name="AGENT_CODE">2328</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794961_19270_198_0</param>
+<param name="CALLER">18918668046</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:12</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:16</param>
+<param name="HANG_TIME">2019-08-03 09:18:38</param>
+<param name="AGENT_CODE">2457</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794913_19236_198_0</param>
+<param name="CALLER">15800563435</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:48</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:53</param>
+<param name="HANG_TIME">2019-08-03 09:18:38</param>
+<param name="AGENT_CODE">1889</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794988_11668_76_0</param>
+<param name="CALLER">13301811589</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:17:21</param>
+<param name="CONNECTED_TIME">2019-08-03 09:17:25</param>
+<param name="HANG_TIME">2019-08-03 09:18:37</param>
+<param name="AGENT_CODE">2322</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794812_11591_76_0</param>
+<param name="CALLER">18917840807</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:14:35</param>
+<param name="CONNECTED_TIME">2019-08-03 09:14:40</param>
+<param name="HANG_TIME">2019-08-03 09:18:41</param>
+<param name="AGENT_CODE">1750</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794928_11636_76_0</param>
+<param name="CALLER">17317561593</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:15:27</param>
+<param name="CONNECTED_TIME">2019-08-03 09:15:33</param>
+<param name="HANG_TIME">2019-08-03 09:18:45</param>
+<param name="AGENT_CODE">3073</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">-1_65535_255_255</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">15201771675</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 09:18:27</param>
+<param name="CONNECTED_TIME">2019-08-03 09:18:49</param>
+<param name="HANG_TIME">2019-08-03 09:18:50</param>
+<param name="AGENT_CODE">1407</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794914_19239_198_0</param>
+<param name="CALLER">18930283690</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:15:15</param>
+<param name="CONNECTED_TIME">2019-08-03 09:15:19</param>
+<param name="HANG_TIME">2019-08-03 09:18:49</param>
+<param name="AGENT_CODE">2145</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795034_11678_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13641654680</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 09:17:21</param>
+<param name="CONNECTED_TIME">2019-08-03 09:17:41</param>
+<param name="HANG_TIME">2019-08-03 09:18:49</param>
+<param name="AGENT_CODE">1364</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795046_19289_198_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13386266285</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 09:17:36</param>
+<param name="CONNECTED_TIME">2019-08-03 09:17:40</param>
+<param name="HANG_TIME">2019-08-03 09:18:53</param>
+<param name="AGENT_CODE">2657</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794951_19257_198_0</param>
+<param name="CALLER">18964331941</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:15:53</param>
+<param name="CONNECTED_TIME">2019-08-03 09:15:59</param>
+<param name="HANG_TIME">2019-08-03 09:18:54</param>
+<param name="AGENT_CODE">2844</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794940_11642_76_0</param>
+<param name="CALLER">13671516564</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:29</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:34</param>
+<param name="HANG_TIME">2019-08-03 09:18:53</param>
+<param name="AGENT_CODE">3116</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794919_19241_198_0</param>
+<param name="CALLER">16621198584</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:15:53</param>
+<param name="CONNECTED_TIME">2019-08-03 09:15:57</param>
+<param name="HANG_TIME">2019-08-03 09:18:54</param>
+<param name="AGENT_CODE">2330</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795038_19288_198_0</param>
+<param name="CALLER">13681627406</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:17:53</param>
+<param name="CONNECTED_TIME">2019-08-03 09:17:59</param>
+<param name="HANG_TIME">2019-08-03 09:19:04</param>
+<param name="AGENT_CODE">2389</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795035_19287_198_0</param>
+<param name="CALLER">13501637220</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:17:30</param>
+<param name="CONNECTED_TIME">2019-08-03 09:17:35</param>
+<param name="HANG_TIME">2019-08-03 09:19:13</param>
+<param name="AGENT_CODE">1697</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794940_19252_198_0</param>
+<param name="CALLER">13386134370</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:15</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:21</param>
+<param name="HANG_TIME">2019-08-03 09:19:15</param>
+<param name="AGENT_CODE">1944</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794909_11629_76_0</param>
+<param name="CALLER">15300405938</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:15:10</param>
+<param name="CONNECTED_TIME">2019-08-03 09:15:14</param>
+<param name="HANG_TIME">2019-08-03 09:19:15</param>
+<param name="AGENT_CODE">3036</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795099_11698_76_0</param>
+<param name="CALLER">18602177575</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">转接</param>
+<param name="CALL_TIME">2019-08-03 09:18:29</param>
+<param name="CONNECTED_TIME">2019-08-03 09:18:33</param>
+<param name="HANG_TIME">2019-08-03 09:19:21</param>
+<param name="AGENT_CODE">2562</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794875_11613_76_0</param>
+<param name="CALLER">13371976563</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">转接</param>
+<param name="CALL_TIME">2019-08-03 09:14:35</param>
+<param name="CONNECTED_TIME">2019-08-03 09:14:40</param>
+<param name="HANG_TIME">2019-08-03 09:19:25</param>
+<param name="AGENT_CODE">3050</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794964_11655_76_0</param>
+<param name="CALLER">13235114246</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:04</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:10</param>
+<param name="HANG_TIME">2019-08-03 09:19:25</param>
+<param name="AGENT_CODE">3245</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795083_19302_198_0</param>
+<param name="CALLER">18121328858</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:18:04</param>
+<param name="CONNECTED_TIME">2019-08-03 09:18:10</param>
+<param name="HANG_TIME">2019-08-03 09:19:32</param>
+<param name="AGENT_CODE">2066</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794955_19262_198_0</param>
+<param name="CALLER">15021136871</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:29</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:33</param>
+<param name="HANG_TIME">2019-08-03 09:19:35</param>
+<param name="AGENT_CODE">2673</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794999_11671_76_0</param>
+<param name="CALLER">18721252915</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:17:36</param>
+<param name="CONNECTED_TIME">2019-08-03 09:17:41</param>
+<param name="HANG_TIME">2019-08-03 09:19:36</param>
+<param name="AGENT_CODE">3145</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795027_19285_198_0</param>
+<param name="CALLER">18117116356</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:17:43</param>
+<param name="CONNECTED_TIME">2019-08-03 09:17:47</param>
+<param name="HANG_TIME">2019-08-03 09:19:39</param>
+<param name="AGENT_CODE">1220</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795055_11686_76_0</param>
+<param name="CALLER">17321206615</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:18:16</param>
+<param name="CONNECTED_TIME">2019-08-03 09:18:20</param>
+<param name="HANG_TIME">2019-08-03 09:19:40</param>
+<param name="AGENT_CODE">3121</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795064_11688_76_0</param>
+<param name="CALLER">18018678192</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:18:12</param>
+<param name="CONNECTED_TIME">2019-08-03 09:18:15</param>
+<param name="HANG_TIME">2019-08-03 09:19:43</param>
+<param name="AGENT_CODE">2928</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794961_19268_198_0</param>
+<param name="CALLER">18918317493</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:02</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:07</param>
+<param name="HANG_TIME">2019-08-03 09:19:48</param>
+<param name="AGENT_CODE">2668</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794863_11604_76_0</param>
+<param name="CALLER">13918396049</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:14:54</param>
+<param name="CONNECTED_TIME">2019-08-03 09:14:58</param>
+<param name="HANG_TIME">2019-08-03 09:19:50</param>
+<param name="AGENT_CODE">2339</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795017_19283_198_0</param>
+<param name="CALLER">13262652325</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:17:42</param>
+<param name="CONNECTED_TIME">2019-08-03 09:17:46</param>
+<param name="HANG_TIME">2019-08-03 09:19:59</param>
+<param name="AGENT_CODE">3098</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794928_19247_198_0</param>
+<param name="CALLER">15058151020</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:01</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:07</param>
+<param name="HANG_TIME">2019-08-03 09:19:59</param>
+<param name="AGENT_CODE">2810</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794943_19253_198_0</param>
+<param name="CALLER">18916679551</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:26</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:32</param>
+<param name="HANG_TIME">2019-08-03 09:20:02</param>
+<param name="AGENT_CODE">2569</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794952_11647_76_0</param>
+<param name="CALLER">50827717</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:31</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:35</param>
+<param name="HANG_TIME">2019-08-03 09:20:05</param>
+<param name="AGENT_CODE">2151</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">-1_65535_255_255</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">18916052116</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 09:19:04</param>
+<param name="CONNECTED_TIME">2019-08-03 09:20:05</param>
+<param name="HANG_TIME">2019-08-03 09:20:05</param>
+<param name="AGENT_CODE">1176</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">-1_65535_255_255</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">18721252915</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 09:20:03</param>
+<param name="CONNECTED_TIME">2019-08-03 09:20:07</param>
+<param name="HANG_TIME">2019-08-03 09:20:07</param>
+<param name="AGENT_CODE">3145</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795096_19311_198_0</param>
+<param name="CALLER">15021382898</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:19:03</param>
+<param name="CONNECTED_TIME">2019-08-03 09:19:07</param>
+<param name="HANG_TIME">2019-08-03 09:20:08</param>
+<param name="AGENT_CODE">2571</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794939_11640_76_0</param>
+<param name="CALLER">66304195</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:07</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:11</param>
+<param name="HANG_TIME">2019-08-03 09:20:11</param>
+<param name="AGENT_CODE">2542</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794919_19242_198_0</param>
+<param name="CALLER">19921264186</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:17:30</param>
+<param name="CONNECTED_TIME">2019-08-03 09:17:36</param>
+<param name="HANG_TIME">2019-08-03 09:20:15</param>
+<param name="AGENT_CODE">1680</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795088_19306_198_0</param>
+<param name="CALLER">13764401677</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:19:01</param>
+<param name="CONNECTED_TIME">2019-08-03 09:19:05</param>
+<param name="HANG_TIME">2019-08-03 09:20:17</param>
+<param name="AGENT_CODE">1773</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795053_19293_198_0</param>
+<param name="CALLER">62730080</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:18:06</param>
+<param name="CONNECTED_TIME">2019-08-03 09:18:10</param>
+<param name="HANG_TIME">2019-08-03 09:20:18</param>
+<param name="AGENT_CODE">3016</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794782_19190_198_0</param>
+<param name="CALLER">13370638273</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:13:44</param>
+<param name="CONNECTED_TIME">2019-08-03 09:13:49</param>
+<param name="HANG_TIME">2019-08-03 09:20:27</param>
+<param name="AGENT_CODE">1749</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795082_19301_198_0</param>
+<param name="CALLER">51795564</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:18:58</param>
+<param name="CONNECTED_TIME">2019-08-03 09:19:02</param>
+<param name="HANG_TIME">2019-08-03 09:20:33</param>
+<param name="AGENT_CODE">2632</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794722_19163_198_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">1</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:12:03</param>
+<param name="CONNECTED_TIME">2019-08-03 09:20:37</param>
+<param name="HANG_TIME">2019-08-03 09:20:36</param>
+<param name="AGENT_CODE">2853</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795098_11697_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13817528141</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 09:18:22</param>
+<param name="CONNECTED_TIME">2019-08-03 09:18:24</param>
+<param name="HANG_TIME">2019-08-03 09:20:38</param>
+<param name="AGENT_CODE">1127</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795174_11732_76_0</param>
+<param name="CALLER">15021363918</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">转接</param>
+<param name="CALL_TIME">2019-08-03 09:19:39</param>
+<param name="CONNECTED_TIME">2019-08-03 09:19:43</param>
+<param name="HANG_TIME">2019-08-03 09:20:43</param>
+<param name="AGENT_CODE">2813</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795110_11703_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">18918447920</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 09:18:35</param>
+<param name="CONNECTED_TIME">2019-08-03 09:19:01</param>
+<param name="HANG_TIME">2019-08-03 09:20:45</param>
+<param name="AGENT_CODE">1167</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794824_11596_76_0</param>
+<param name="CALLER">13501990331</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:14:13</param>
+<param name="CONNECTED_TIME">2019-08-03 09:14:18</param>
+<param name="HANG_TIME">2019-08-03 09:20:55</param>
+<param name="AGENT_CODE">1923</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795099_11699_76_0</param>
+<param name="CALLER">13515195155</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:19:08</param>
+<param name="CONNECTED_TIME">2019-08-03 09:19:12</param>
+<param name="HANG_TIME">2019-08-03 09:20:55</param>
+<param name="AGENT_CODE">2582</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794953_19259_198_0</param>
+<param name="CALLER">15000004096</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:15:54</param>
+<param name="CONNECTED_TIME">2019-08-03 09:15:58</param>
+<param name="HANG_TIME">2019-08-03 09:20:58</param>
+<param name="AGENT_CODE">3174</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794902_19233_198_0</param>
+<param name="CALLER">13818808757</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:15:37</param>
+<param name="CONNECTED_TIME">2019-08-03 09:15:41</param>
+<param name="HANG_TIME">2019-08-03 09:20:58</param>
+<param name="AGENT_CODE">3059</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795245_19360_198_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">63192482</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 09:20:48</param>
+<param name="CONNECTED_TIME">2019-08-03 09:20:48</param>
+<param name="HANG_TIME">2019-08-03 09:21:00</param>
+<param name="AGENT_CODE">1877</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564794982_11665_76_0</param>
+<param name="CALLER">18917545636</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:16:25</param>
+<param name="CONNECTED_TIME">2019-08-03 09:16:30</param>
+<param name="HANG_TIME">2019-08-03 09:21:17</param>
+<param name="AGENT_CODE">3261</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795223_11751_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">17740865875</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 09:20:29</param>
+<param name="CONNECTED_TIME">2019-08-03 09:20:38</param>
+<param name="HANG_TIME">2019-08-03 09:21:30</param>
+<param name="AGENT_CODE">1407</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795160_11725_76_0</param>
+<param name="CALLER">13162671412</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:19:52</param>
+<param name="CONNECTED_TIME">2019-08-03 09:19:56</param>
+<param name="HANG_TIME">2019-08-03 09:21:29</param>
+<param name="AGENT_CODE">1213</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795125_11711_76_0</param>
+<param name="CALLER">15921773345</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:19:06</param>
+<param name="CONNECTED_TIME">2019-08-03 09:19:11</param>
+<param name="HANG_TIME">2019-08-03 09:21:37</param>
+<param name="AGENT_CODE">2560</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795241_11758_76_0</param>
+<param name="CALLER">13817015422</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:20:43</param>
+<param name="CONNECTED_TIME">2019-08-03 09:20:50</param>
+<param name="HANG_TIME">2019-08-03 09:21:44</param>
+<param name="AGENT_CODE">2974</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795124_11709_76_0</param>
+<param name="CALLER">15000260034</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:19:21</param>
+<param name="CONNECTED_TIME">2019-08-03 09:19:24</param>
+<param name="HANG_TIME">2019-08-03 09:21:44</param>
+<param name="AGENT_CODE">2328</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795166_11727_76_0</param>
+<param name="CALLER">17321219150</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:19:33</param>
+<param name="CONNECTED_TIME">2019-08-03 09:19:37</param>
+<param name="HANG_TIME">2019-08-03 09:21:46</param>
+<param name="AGENT_CODE">2374</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564795192_11737_76_0</param>
+<param name="CALLER">15021382898</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:20:26</param>
+<param name="CONNECTED_TIME">2019-08-03 09:20:32</param>
+<param name="HANG_TIME">2019-08-03 09:21:47</param>
+<param name="AGENT_CODE">2873</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797855_12788_76_0</param>
+<param name="CALLER">17317488825</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:44</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:48</param>
+<param name="HANG_TIME">2019-08-03 10:06:24</param>
+<param name="AGENT_CODE">2339</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797768_20295_198_0</param>
+<param name="CALLER">17717326171</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:02:49</param>
+<param name="CONNECTED_TIME">2019-08-03 10:02:53</param>
+<param name="HANG_TIME">2019-08-03 10:06:25</param>
+<param name="AGENT_CODE">3174</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797427_20179_198_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">1</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:57:07</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:33</param>
+<param name="HANG_TIME">2019-08-03 10:06:32</param>
+<param name="AGENT_CODE">2066</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797761_20293_198_0</param>
+<param name="CALLER">18916539239</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:02:43</param>
+<param name="CONNECTED_TIME">2019-08-03 10:02:47</param>
+<param name="HANG_TIME">2019-08-03 10:06:34</param>
+<param name="AGENT_CODE">1969</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797427_20179_198_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">1</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:57:07</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:37</param>
+<param name="HANG_TIME">2019-08-03 10:06:36</param>
+<param name="AGENT_CODE">2066</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797856_12789_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">64791618</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 10:04:27</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:28</param>
+<param name="HANG_TIME">2019-08-03 10:06:42</param>
+<param name="AGENT_CODE">1326</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797664_20262_198_0</param>
+<param name="CALLER">18616602422</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:01:32</param>
+<param name="CONNECTED_TIME">2019-08-03 10:01:36</param>
+<param name="HANG_TIME">2019-08-03 10:06:48</param>
+<param name="AGENT_CODE">2612</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797663_12715_76_0</param>
+<param name="CALLER">051265246229</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:01:04</param>
+<param name="CONNECTED_TIME">2019-08-03 10:01:08</param>
+<param name="HANG_TIME">2019-08-03 10:06:48</param>
+<param name="AGENT_CODE">3219</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797706_12729_76_0</param>
+<param name="CALLER">13512143361</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:02:24</param>
+<param name="CONNECTED_TIME">2019-08-03 10:02:27</param>
+<param name="HANG_TIME">2019-08-03 10:06:49</param>
+<param name="AGENT_CODE">3080</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797809_12762_76_0</param>
+<param name="CALLER">13120530221</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:03:31</param>
+<param name="CONNECTED_TIME">2019-08-03 10:03:35</param>
+<param name="HANG_TIME">2019-08-03 10:06:51</param>
+<param name="AGENT_CODE">2769</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797817_20310_198_0</param>
+<param name="CALLER">18621750985</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:03:39</param>
+<param name="CONNECTED_TIME">2019-08-03 10:03:43</param>
+<param name="HANG_TIME">2019-08-03 10:06:51</param>
+<param name="AGENT_CODE">3198</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797662_20258_198_0</param>
+<param name="CALLER">15346202886</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:01:03</param>
+<param name="CONNECTED_TIME">2019-08-03 10:01:07</param>
+<param name="HANG_TIME">2019-08-03 10:06:53</param>
+<param name="AGENT_CODE">2972</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797846_20321_198_0</param>
+<param name="CALLER">56935750</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:08</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:13</param>
+<param name="HANG_TIME">2019-08-03 10:06:56</param>
+<param name="AGENT_CODE">2055</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797672_20266_198_0</param>
+<param name="CALLER">13262270121</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:01:13</param>
+<param name="CONNECTED_TIME">2019-08-03 10:01:17</param>
+<param name="HANG_TIME">2019-08-03 10:06:58</param>
+<param name="AGENT_CODE">1754</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797909_12817_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">13918479395</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 10:05:14</param>
+<param name="CONNECTED_TIME">2019-08-03 10:05:29</param>
+<param name="HANG_TIME">2019-08-03 10:07:00</param>
+<param name="AGENT_CODE">1422</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797859_12791_76_0</param>
+<param name="CALLER">58614163</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:51</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:56</param>
+<param name="HANG_TIME">2019-08-03 10:07:04</param>
+<param name="AGENT_CODE">2963</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797908_12816_76_0</param>
+<param name="CALLER">13601870488</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:06:04</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:10</param>
+<param name="HANG_TIME">2019-08-03 10:07:04</param>
+<param name="AGENT_CODE">2928</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797891_12809_76_0</param>
+<param name="CALLER">13524681172</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:53</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:58</param>
+<param name="HANG_TIME">2019-08-03 10:07:09</param>
+<param name="AGENT_CODE">2555</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797663_12716_76_0</param>
+<param name="CALLER">51271886</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:01:05</param>
+<param name="CONNECTED_TIME">2019-08-03 10:01:09</param>
+<param name="HANG_TIME">2019-08-03 10:07:10</param>
+<param name="AGENT_CODE">2560</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797548_20218_198_0</param>
+<param name="CALLER">15221741567</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">转接</param>
+<param name="CALL_TIME">2019-08-03 09:59:47</param>
+<param name="CONNECTED_TIME">2019-08-03 09:59:51</param>
+<param name="HANG_TIME">2019-08-03 10:07:10</param>
+<param name="AGENT_CODE">2571</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797818_12770_76_0</param>
+<param name="CALLER">58870375</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:03:39</param>
+<param name="CONNECTED_TIME">2019-08-03 10:03:44</param>
+<param name="HANG_TIME">2019-08-03 10:07:17</param>
+<param name="AGENT_CODE">2494</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797647_20251_198_0</param>
+<param name="CALLER">13917458173</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:01:34</param>
+<param name="CONNECTED_TIME">2019-08-03 10:01:40</param>
+<param name="HANG_TIME">2019-08-03 10:07:20</param>
+<param name="AGENT_CODE">1680</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797946_12827_76_0</param>
+<param name="CALLER">18917333387</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:05:46</param>
+<param name="CONNECTED_TIME">2019-08-03 10:05:52</param>
+<param name="HANG_TIME">2019-08-03 10:07:23</param>
+<param name="AGENT_CODE">2562</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797979_12843_76_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">18121378520</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 10:06:26</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:43</param>
+<param name="HANG_TIME">2019-08-03 10:07:25</param>
+<param name="AGENT_CODE">1364</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797599_20238_198_0</param>
+<param name="CALLER">17521278320</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:00:27</param>
+<param name="CONNECTED_TIME">2019-08-03 10:00:31</param>
+<param name="HANG_TIME">2019-08-03 10:07:27</param>
+<param name="AGENT_CODE">2966</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797838_12780_76_0</param>
+<param name="CALLER">18321706276</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:01</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:05</param>
+<param name="HANG_TIME">2019-08-03 10:07:28</param>
+<param name="AGENT_CODE">3063</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797862_20330_198_0</param>
+<param name="CALLER">15802121158</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:24</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:28</param>
+<param name="HANG_TIME">2019-08-03 10:07:40</param>
+<param name="AGENT_CODE">3016</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797907_12815_76_0</param>
+<param name="CALLER">15800969766</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:05:07</param>
+<param name="CONNECTED_TIME">2019-08-03 10:05:12</param>
+<param name="HANG_TIME">2019-08-03 10:07:40</param>
+<param name="AGENT_CODE">2582</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797926_20354_198_0</param>
+<param name="CALLER">18221093141</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:05:28</param>
+<param name="CONNECTED_TIME">2019-08-03 10:05:34</param>
+<param name="HANG_TIME">2019-08-03 10:07:46</param>
+<param name="AGENT_CODE">2668</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797994_12849_76_0</param>
+<param name="CALLER">62066291</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:06:36</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:40</param>
+<param name="HANG_TIME">2019-08-03 10:07:47</param>
+<param name="AGENT_CODE">3230</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797908_20348_198_0</param>
+<param name="CALLER">18821093097</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:05:43</param>
+<param name="CONNECTED_TIME">2019-08-03 10:05:48</param>
+<param name="HANG_TIME">2019-08-03 10:07:47</param>
+<param name="AGENT_CODE">2145</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797950_12831_76_0</param>
+<param name="CALLER">13061688832</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:05:54</param>
+<param name="CONNECTED_TIME">2019-08-03 10:05:58</param>
+<param name="HANG_TIME">2019-08-03 10:07:52</param>
+<param name="AGENT_CODE">3065</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797886_12806_76_0</param>
+<param name="CALLER">13917388077</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:48</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:54</param>
+<param name="HANG_TIME">2019-08-03 10:07:49</param>
+<param name="AGENT_CODE">3021</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797948_20359_198_0</param>
+<param name="CALLER">15801900136</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:05:48</param>
+<param name="CONNECTED_TIME">2019-08-03 10:05:52</param>
+<param name="HANG_TIME">2019-08-03 10:07:51</param>
+<param name="AGENT_CODE">2256</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564798030_20396_198_0</param>
+<param name="CALLER">13764281746</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:07:11</param>
+<param name="CONNECTED_TIME">2019-08-03 10:07:15</param>
+<param name="HANG_TIME">2019-08-03 10:07:54</param>
+<param name="AGENT_CODE">2074</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564798005_12852_76_0</param>
+<param name="CALLER">15710120568</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">转接</param>
+<param name="CALL_TIME">2019-08-03 10:06:45</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:49</param>
+<param name="HANG_TIME">2019-08-03 10:07:55</param>
+<param name="AGENT_CODE">1659</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797952_20362_198_0</param>
+<param name="CALLER">18101870337</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:06:26</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:32</param>
+<param name="HANG_TIME">2019-08-03 10:07:57</param>
+<param name="AGENT_CODE">2724</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797550_20221_198_0</param>
+<param name="CALLER">19821667267</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 09:59:43</param>
+<param name="CONNECTED_TIME">2019-08-03 09:59:47</param>
+<param name="HANG_TIME">2019-08-03 10:08:06</param>
+<param name="AGENT_CODE">3201</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797848_12784_76_0</param>
+<param name="CALLER">15021733082</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:42</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:49</param>
+<param name="HANG_TIME">2019-08-03 10:08:09</param>
+<param name="AGENT_CODE">3145</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797768_20297_198_0</param>
+<param name="CALLER">13818363742</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:03:08</param>
+<param name="CONNECTED_TIME">2019-08-03 10:03:14</param>
+<param name="HANG_TIME">2019-08-03 10:08:08</param>
+<param name="AGENT_CODE">2911</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797947_12829_76_0</param>
+<param name="CALLER">18116491484</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:05:48</param>
+<param name="CONNECTED_TIME">2019-08-03 10:05:52</param>
+<param name="HANG_TIME">2019-08-03 10:08:10</param>
+<param name="AGENT_CODE">3288</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797955_20363_198_0</param>
+<param name="CALLER">13671893447</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">转接</param>
+<param name="CALL_TIME">2019-08-03 10:06:31</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:36</param>
+<param name="HANG_TIME">2019-08-03 10:08:11</param>
+<param name="AGENT_CODE">2906</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797951_20361_198_0</param>
+<param name="CALLER">18101816988</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:06:09</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:14</param>
+<param name="HANG_TIME">2019-08-03 10:08:10</param>
+<param name="AGENT_CODE">2817</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564798019_20393_198_0</param>
+<param name="CALLER">17614429195</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">转接</param>
+<param name="CALL_TIME">2019-08-03 10:07:33</param>
+<param name="CONNECTED_TIME">2019-08-03 10:07:37</param>
+<param name="HANG_TIME">2019-08-03 10:08:22</param>
+<param name="AGENT_CODE">3148</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564798015_20391_198_0</param>
+<param name="CALLER">12345</param>
+<param name="CALLEE">18321451268</param>
+<param name="CALL_TYPE">外呼</param>
+<param name="CALL_TIME">2019-08-03 10:06:57</param>
+<param name="CONNECTED_TIME">2019-08-03 10:07:56</param>
+<param name="HANG_TIME">2019-08-03 10:08:34</param>
+<param name="AGENT_CODE">3226</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564798006_20385_198_0</param>
+<param name="CALLER">15921780154</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:06:48</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:52</param>
+<param name="HANG_TIME">2019-08-03 10:08:39</param>
+<param name="AGENT_CODE">3098</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797845_12782_76_0</param>
+<param name="CALLER">18116072005</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:42</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:46</param>
+<param name="HANG_TIME">2019-08-03 10:08:45</param>
+<param name="AGENT_CODE">2481</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797871_12797_76_0</param>
+<param name="CALLER">13611709899</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:05:57</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:01</param>
+<param name="HANG_TIME">2019-08-03 10:08:48</param>
+<param name="AGENT_CODE">2344</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564798014_20390_198_0</param>
+<param name="CALLER">13681725542</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:07:35</param>
+<param name="CONNECTED_TIME">2019-08-03 10:07:40</param>
+<param name="HANG_TIME">2019-08-03 10:08:53</param>
+<param name="AGENT_CODE">2918</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564798025_12866_76_0</param>
+<param name="CALLER">13818489656</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:07:06</param>
+<param name="CONNECTED_TIME">2019-08-03 10:07:11</param>
+<param name="HANG_TIME">2019-08-03 10:08:54</param>
+<param name="AGENT_CODE">2483</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797829_12775_76_0</param>
+<param name="CALLER">15573275678</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:23</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:27</param>
+<param name="HANG_TIME">2019-08-03 10:08:56</param>
+<param name="AGENT_CODE">2594</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797934_20355_198_0</param>
+<param name="CALLER">13818401859</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:06:00</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:05</param>
+<param name="HANG_TIME">2019-08-03 10:08:56</param>
+<param name="AGENT_CODE">2622</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797886_12805_76_0</param>
+<param name="CALLER">18916514842</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:04:47</param>
+<param name="CONNECTED_TIME">2019-08-03 10:04:51</param>
+<param name="HANG_TIME">2019-08-03 10:09:07</param>
+<param name="AGENT_CODE">3127</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564798048_12874_76_0</param>
+<param name="CALLER">13916723291</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:07:28</param>
+<param name="CONNECTED_TIME">2019-08-03 10:07:32</param>
+<param name="HANG_TIME">2019-08-03 10:09:16</param>
+<param name="AGENT_CODE">2572</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+<information>
+<param name="CALL_IDENTITY">1564797967_20365_198_0</param>
+<param name="CALLER">20982062</param>
+<param name="CALLEE">12345</param>
+<param name="CALL_TYPE">来电</param>
+<param name="CALL_TIME">2019-08-03 10:06:47</param>
+<param name="CONNECTED_TIME">2019-08-03 10:06:51</param>
+<param name="HANG_TIME">2019-08-03 10:09:27</param>
+<param name="AGENT_CODE">2282</param>
+<param name="EXTENSIONNO">无</param>
+</information>
+</Request>
