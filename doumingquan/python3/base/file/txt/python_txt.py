@@ -23,6 +23,5 @@ for line in file.readlines():
         # sql = """
         #     insert into wbuser (uid,screen_name,gender,fans_no,description,is_followed) VALUES ('%s','%s','%s','%d','%s','%s')"""
 
-
     else:
         break
