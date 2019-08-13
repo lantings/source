@@ -1,7 +1,7 @@
 import configparser  
 import sys  
 config=configparser.ConfigParser()  
-config.read(u'test.conf')  
+config.read(u'test.conf',encoding="utf-8-sig")
 #print (string.upper(config.get("book","title"))) 
 print ("by",config.get("book","title"))
 print ("("+config.get("book","time")+")")
