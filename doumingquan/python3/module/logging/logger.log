@@ -2,3 +2,21 @@ INFO:example01:info message
 WARNING:example01:warn message
 ERROR:example01:error message
 CRITICAL:example01:critical message
+INFO:example01:info message
+WARNING:example01:warn message
+ERROR:example01:error message
+CRITICAL:example01:critical message
+INFO:example01:info message
+WARNING:example01:warn message
+ERROR:example01:error message
+CRITICAL:example01:critical message
+INFO:example01:info message
+WARNING:example01:warn message
+ERROR:example01:error message
+CRITICAL:example01:critical message
+INFO:root:test1
+INFO:example01:info message
+WARNING:example01:warn message
+ERROR:example01:error message
+CRITICAL:example01:critical message
+INFO:root:test1
