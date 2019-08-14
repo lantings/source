@@ -6,8 +6,11 @@ string = "123456"
 
 md5 = hashlib.md5()
 #编码
-md5.update(string.encode('utf-8'))     
+md5.update(string.encode('utf-8'))
+erjinzhi = md5.digest()
+# hexdigest 返回的是16进制 php md5返回的也是16进制
 res = md5.hexdigest()
+print("二进制加密结果:",erjinzhi)
 print("md5加密结果:",res)
 
 # ------- sha1-----
@@ -34,6 +37,8 @@ sha512= hashlib.sha512()
 sha512.update(string.encode('utf-8'))
 res = sha512.hexdigest()
 print("sha512加密结果:",res)
+
+
 
 
 
