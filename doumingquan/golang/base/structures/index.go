@@ -20,3 +20,17 @@ func main() {
     // 忽略的字段为 0 或 空
    fmt.Println(Books{title: "Go语言", author: "www.runoob.com"})
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
