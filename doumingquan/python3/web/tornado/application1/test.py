@@ -13,7 +13,12 @@ class MainHandler(tornado.web.RequestHandler):
         print(res)
 
     def post(self):
-        self.write("this is post data")
+        res = self.request.body.decode('utf-8')
+        res = json.loads(res)
+        print(res)
+
+        # self.write("this is post data")
+
 
 
 application = tornado.web.Application([
