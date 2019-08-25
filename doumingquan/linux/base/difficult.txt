@@ -1,3 +1,13 @@
 xmllint -noout   ***.xml   	 检查xml格式是否正确
 cat file file2>newfile 	文件合并 
 curl -X 'http://www.baidu.com:80'  -d 'string'
+split 分割文件
+分卷压缩
+md5sum -c   filename   校验文件
+
+
+
+
+
+
+
