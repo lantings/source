@@ -1,5 +1,5 @@
 from jdbcs import jdbc_connect
-# 导入一个类 实例化
+# 导入一个本地类 实例化
 dbt=jdbc_connect("localhost", "root", "root", "test")
 str1="select * from score"
 #学生集合

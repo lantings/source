@@ -6,9 +6,10 @@ import os
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
+        # res = self.request('name')
         # self.write("Hello, world")
         # self.write("数据存储在呀")
-        # self.write("型号")
+        self.write("型号")
         # res = '172.168.22.156';
         # res = res.split('.')
         # print(res)

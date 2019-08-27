@@ -25,6 +25,9 @@ print(asc)
 print(asctime)
 # Thu Aug  8 20:23:47 2019
 
+m = time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))[0:8]
+print('this is today date '+m)
+
 
 
 
