@@ -12,7 +12,8 @@ info += "{key}='{value}',".format(key='mingquan', value='123456')
 info="{key}='{value}',".format(key='test', value='123456')
 print(info)
 
-str3 = info.append()
-
+string = type(info).__name__  #打印出string
+# str3 = info.append()
+print(string)
 
 
