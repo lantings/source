@@ -1,0 +1,43 @@
+{
+        "job": {
+            "setting": {
+                "speed": {
+                    "channel":2
+                },
+                "errorLimit": {
+                }
+            },
+        "content": [{
+            "reader": {
+                "name": "mysqlreader",
+                "parameter": {
+                    "connection": [{
+                        "jdbcUrl": [
+                            "jdbc:mysql://15.75.8.103:3306/dsjzx"
+                        ],
+                        "table": [
+                            "dsjzx.base_jzz_jzz_cardinfo_df"
+                        ]
+                    }],
+                    "column":["REPLACE(REPLACE(apptype, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(apptype_hz, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(regcode, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(chidcard, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(chname, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(sortcode, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(certinum, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(enrolid, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(cardid, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(atr, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(version, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(facedate, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(facedate_dt, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(validdate, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(validdate_dt, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(recokdate, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(reusenum, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(cardstatus, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(cardstatus_hz, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(cardstadate, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(statusunitcode, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(statusunitcode_hz, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(oprlattice, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(oprlattice_hz, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(confirmstatus, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(confirmdate, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(confirmdate_dt, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(latgetcard, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(latgetcard_hz, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(latgetdate, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(pergetdate, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(errorreason, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(timestamp, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(createtime, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(createtime_dt, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(reserved, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(updtuser, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(updttime, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(updttime_dt, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(policeid, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(policeid_hz, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(dwd_loadtime, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(dwd_updatetime, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(dwd_yxbz, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(dt, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(jhpt_update_time, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(jhpt_delete, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')"],
+                    "fetchSize":2048,
+                    "splitPk": "",
+                    "password": "1Qaz2wsx",
+                    "username": "dsjzxsjjhtp",
+                    "where": "jhpt_update_time < DATE_SUB(STR_TO_DATE(${timecolumn},'%Y%m%d'),INTERVAL 2 DAY)"
+                }
+            },
+            "writer": {
+                "name": "txtfilewriter",
+                "parameter": {
+                    "path": "/opt/datatom/dana_api/data/gonganju/dsjzx_base_jzz_jzz_cardinfo_df",
+                    "writeMode": "truncate",
+                    "fileName": "dsjzx_base_jzz_jzz_cardinfo_df",
+                    "fieldDelimiter": "\u0001",
+                    "encoding": "utf8",
+                    "dateFormat": "yyyy-MM-dd HH:mm:ss"
+                }
+            }
+        }]
+    }
+}

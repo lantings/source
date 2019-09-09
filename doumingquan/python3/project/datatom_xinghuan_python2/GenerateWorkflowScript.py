@@ -1,0 +1,389 @@
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+
+import os
+import sys
+import ConfigParser
+import subprocess
+import jaydebeapi
+import logging
+import xml.etree.ElementTree as ET
+import commands
+import psycopg2
+from xpinyin import Pinyin
+import re
+import cx_Oracle
+import datetime
+
+
+#文件路径
+file_dir='/opt/datatom/dana_api'
+time_cfg="/root/.time.cfg"
+jarFile='/opt/datatom/dana_api/libs/inceptor-driver-5.2.0.jar'
+log_path='/opt/datatom/dana_api/log/'
+source_log='source.log'
+
+
+# #log日志
+log_name = log_path + source_log
+EL = logging.FileHandler(log_name, mode='a')
+formatter = logging.Formatter("%(asctime)s - [line:%(lineno)d] - %(levelname)s: %(message)s")
+EL.setFormatter(formatter)
+elogger = logging.Logger(name='Sourcelog',level=logging.DEBUG)
+elogger.addHandler(EL)
+
+
+#定义打印信息类
+class Print:
+    def info(self, info):
+        print('\033[1;36;10m[INFO]%s\033[0m' % info)
+    def error(self, error):
+        print('\033[1;31;10m[ERROR]%s\033[0m' % error)
+        sys.exit(2)
+    def ok(self, ok):
+        print('\033[1;32;10m[INFO]%s\033[0m' % ok)
+pri = Print();
+
+class MyConfigParser(ConfigParser.ConfigParser):
+        def __init__(self, defaults=None):
+            ConfigParser.ConfigParser.__init__(self, defaults=defaults)
+        def optionxform(self, optionstr):
+            return optionstr
+
+
+#连接源数据库获取源数据信息
+def source_params(UnitId,Dbname):
+	try:
+		conn = psycopg2.connect(database="postgres", user="stork",password="stork", host="172.26.16.90", port="14103")
+		cursor = conn.cursor()
+		cursor.execute("select * from source_info where unitid = '%s' and sourcedbname = '%s'"%(UnitId,Dbname))
+		rows = cursor.fetchall()
+		for row in rows:
+			unitname = row[1]
+			databasetype = row[2]
+			sourceip = row[3]
+			sourceport = row[4]
+			sourcedbname=row[5]
+			sourceaddress = row[6]
+			sourceusername = row[7]
+			sourcepassword = row[8]
+		return unitname,databasetype,sourceip,sourceport,sourcedbname,sourceaddress,sourceusername,sourcepassword
+		cursor.close()
+		conn.close()
+	except Exception as e:
+		s = sys.exc_info()
+		pri.error("source database connect failed,please check stork status!")
+		return 1
+
+
+#获取目的端参数
+def init(path_name):
+	table_conf="/opt/datatom/dana_api/table_cfg/%s.conf"%path_name
+	if os.path.exists(table_conf):
+		conf = MyConfigParser()
+		conf.read(table_conf)
+		UnitName = conf.get('info','UnitName')
+		MappingList = conf.get('info','MappingList')
+		SourceTableName =conf.get('info','SourceTableName')
+		XinghuanAddress = conf.get('info','XinghuanAddress')
+		XinghuanUsername = "" 
+		XinghuanPassword = ""
+		PrimaryKey = conf.get('info','PrimaryKey')
+		HttpfsAddress = conf.get('info','HttpfsAddress')
+		XinghuanTableName = conf.get('info','XinghuanTableName')
+		XinghuanOrcTableName = conf.get('info','XinghuanOrcTableName')
+		Exectimes = conf.get('info','Exectimes')
+		AddTimefield = conf.get('info','AddTimefield')
+		ColumnType = conf.get('info','ColumnType')
+		ScheduleType = conf.get('info','ScheduleType')
+		TargetList = conf.get('info','TargetList')
+		Execrate = conf.get('info','Execrate')
+		return UnitName,MappingList,SourceTableName,XinghuanAddress,XinghuanUsername,XinghuanPassword,PrimaryKey,HttpfsAddress,XinghuanTableName,XinghuanOrcTableName,Exectimes,AddTimefield,ColumnType,ScheduleType,TargetList,Execrate
+	else:
+		pri.error("params %s is not exists"%table_conf)
+		return 1
+
+
+#生成datax配置文件
+def datax_update(UnitId,path_name,Dbname):
+	UnitName,MappingList,SourceTableName,XinghuanAddress,XinghuanUsername,XinghuanPassword,PrimaryKey,HttpfsAddress,XinghuanTableName,XinghuanOrcTableName,Exectimes,AddTimefield,ColumnType,ScheduleType,TargetList,Execrate = init(path_name)
+	unitname,databasetype,sourceip,sourceport,sourcedbname,sourceaddress,sourceusername,sourcepassword = source_params(UnitId,Dbname)
+	source_tbname = SourceTableName.split('.')[1]
+	source_dbname = SourceTableName.split('.')[0]
+	ip_unit = sourceip.split('.')[2]+'_'+sourceip.split('.')[3]
+	MappingList1 = MappingList.split(',')
+	MappingList_new = []
+	#字段预处理，去除空格、回车、换行
+	if databasetype == 'oracle' or databasetype == 'dameng':
+		for i in range(len(MappingList1)):
+			MappingList_new.append("REPLACE(REPLACE(%s, CHR(10), '\u200b'), CHR(13),'\u200c')"%MappingList1[i])
+	elif databasetype == 'mysql':
+		for i in range(len(MappingList1)):
+			MappingList_new.append("REPLACE(REPLACE(%s, CHAR(10), '\u200b'), CHAR(13),'\u200c')"%MappingList1[i])
+	template_json = '/opt/datatom/dana_api/template/datatom.json'
+	if os.path.exists(template_json):
+		with open("/opt/datatom/dana_api/template/datatom.json",'r') as fdata :
+			fdata = fdata.read().replace("$MappingList",str(MappingList_new))
+			fdata = fdata.replace("${SourceUsername}",sourceusername)
+			fdata = fdata.replace("${SourcePassword}",sourcepassword)
+			fdata = fdata.replace("${SourceTableName}",SourceTableName)
+			fdata = fdata.replace("${source_dbname}",source_dbname)
+			fdata = fdata.replace("${source_tbname}",source_tbname)
+			PrimaryKey1 = PrimaryKey.split(',')
+			if PrimaryKey.lower() == 'empty' or  len(PrimaryKey1) != 1:
+				fdata = fdata.replace("${primarykey}","")
+			else:
+				fdata = fdata.replace("${primarykey}",PrimaryKey)
+			fdata = fdata.replace("${SourceAddress}",sourceaddress)
+			fdata = fdata.replace("${unitName}",unitname)
+			if databasetype == 'mysql':
+				fdata = fdata.replace("${DatabaseType}","mysqlreader")
+	
+			elif databasetype == 'oracle':
+				fdata = fdata.replace("${DatabaseType}","oraclereader")
+			elif databasetype == 'dameng':
+				fdata = fdata.replace("${DatabaseType}","rdbmsreader")
+		return fdata
+	else:
+		pri.error("template_json %s is not exists"%template_json)
+	
+
+#生成datax增量配置文件
+def datax_cfg_file(UnitId,path_name,Dbname):
+	UnitName,MappingList,SourceTableName,XinghuanAddress,XinghuanUsername,XinghuanPassword,PrimaryKey,HttpfsAddress,XinghuanTableName,XinghuanOrcTableName,Exectimes,AddTimefield,ColumnType,ScheduleType,TargetList,Execrate = init(path_name)
+	unitname,databasetype,sourceip,sourceport,sourcedbname,sourceaddress,sourceusername,sourcepassword = source_params(UnitId,Dbname)
+	datax_fdata_cfg = datax_update(UnitId,path_name,Dbname)
+	where = ''
+	ColumnType = ColumnType.lower()
+	Exectimes = str(Exectimes)
+	ScheduleType = str(ScheduleType)
+	Execrate = str(Execrate)
+	#配置datax增量参数
+	if Execrate == '2':
+		where = ''
+	else:
+		if Exectimes == '-1' or Exectimes == '1':
+			if databasetype == 'mysql':
+				if ScheduleType == '1':
+					if ColumnType == 'varchar':
+						wherevarchar = "%s >= DATE_FORMAT(DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 2 DAY),'%%Y%%m%%d') and %s < DATE_FORMAT(DATE_SUB(STR_TO_DATE(${timecolumn},'	%%Y%%m%%d'),INTERVAL 1 DAY),'%%Y%%m%%d') "%(AddTimefield,AddTimefield)
+						where = wherevarchar
+					elif ColumnType == 'date' or ColumnType == 'timestamp' or ColumnType == 'datetime':
+						wheredate = "%s >= DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 2 DAY) and %s <  DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 1 DAY)"%(	AddTimefield,AddTimefield)
+						where = wheredate
+					else:
+						pri.error("the parameter ColumnType is not exists or type error!")
+				elif ScheduleType == '2':
+					if ColumnType == 'varchar':
+						wherevarchar = "%s >= DATE_FORMAT(DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 8 DAY),'%%Y%%m%%d') and %s < DATE_FORMAT(DATE_SUB(STR_TO_DATE(${timecolumn},'	%%Y%%m%%d'),INTERVAL 1 DAY),'%%Y%%m%%d') "%(AddTimefield,AddTimefield)
+						where = wherevarchar
+					elif ColumnType == 'date' or  ColumnType =='timestamp' or ColumnType == 'datetime':
+						wheredate = "%s >= DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 8 DAY) and %s < DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 1 DAY) "%(	AddTimefield,AddTimefield)
+						where = wheredate
+					else:
+						pri.error("the parameter ColumnType is not exists or type error!")
+				elif ScheduleType == '3':
+					if ColumnType == 'varchar':
+						wherevarchar = "%s >= DATE_FORMAT(DATA_SUB(DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 1 MONTH),INTERVAL 1 DAY),'%%Y%%m%%d') and %s < DATE_FORMAT(DATE_SUB(	STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 1 DAY),'%%Y%%m%%d') "%(AddTimefield,AddTimefield)
+						where = wherevarchar
+					elif ColumnType == 'date' or ColumnType == 'timestamp' or ColumnType == 'datetime':
+						wheredate = "%s >= DATA_SUB(DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 1 MONTH),INTERVAL 1 DAY) and %s < DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%	d'),INTERVAL 1 DAY)"%(AddTimefield,AddTimefield)
+						where = wheredate
+					else:
+						pri.error("the parameter ColumnType is not exists or type error!")
+				else:
+					pri.error("the parameter ScheduleType is not exists or type error!")
+			if databasetype == 'oracle' or databasetype == 'dameng':
+				if ScheduleType == '1':
+					if ColumnType == 'varchar2':
+						wherevarchar2 = "%s >= to_char(to_date(${timecolumn},'yyyymmdd') - INTERVAL '2' DAY , 'yyyymmdd') and %s  < to_char(to_date(${timecolumn},'yyyymmdd') - INTERVAL '1' 	DAY , 'yyyymmdd') "%(AddTimefield,AddTimefield)
+						where = wherevarchar2 
+					elif ColumnType == 'date'  or ColumnType == 'timestamp' or ColumnType == 'datetime':
+						wheredate = "%s >= to_date(${timecolumn},'yyyymmdd') - INTERVAL '2' DAY  and %s < to_date(${timecolumn},'yyyymmdd') - INTERVAL '1' DAY "%(AddTimefield,AddTimefield)
+						where = wheredate
+					else:
+						pri.error("the parameter ColumnType is not exists or type error!")
+				elif ScheduleType == '2':
+					if ColumnType == 'varchar2':
+						wherevarchar2 = "%s >= to_char(to_date(${timecolumn},'yyyymmdd') - INTERVAL '8' DAY , 'yyyymmdd') and %s < to_char(to_date(${timecolumn},'yyyymmdd') - INTERVAL '1' DAY 	, 'yyyymmdd') "%(AddTimefield,AddTimefield)
+						where = wherevarchar2 
+					elif ColumnType == 'date'  or ColumnType == 'timestamp' or ColumnType == 'datetime':
+						wheredate = "%s >= to_date(${timecolumn},'yyyymmdd') - INTERVAL '8' DAY  and %s < to_date(${timecolumn},'yyyymmdd') - INTERVAL '1' DAY "%(AddTimefield,AddTimefield)
+						where = wheredate
+					else:
+						pri.error("the parameter ColumnType is not exists or type error!")
+				elif ScheduleType == '3':
+					if ColumnType == 'varchar2':
+						wherevarchar2 = "%s >= to_char(to_date(${timecolumn},'yyyymmdd') - INTERVAL '1' MONTH - INTERVAL '1' DAY, 'yyyymmdd') and %s < to_char(to_date(${timecolumn}	,'yyyymmdd') - INTERVAL '1' DAY , 'yyyymmdd')  "%(AddTimefield,AddTimefield)
+						where = wherevarchar2 
+					elif ColumnType == 'date'  or ColumnType == 'timestamp' or ColumnType == 'datetime':
+						wheredate = "%s >= to_date(${timecolumn},'yyyymmdd') - INTERVAL '1' MONTH - INTERVAL '1' DAY and %s < to_date(${timecolumn},'yyyymmdd') - INTERVAL '1' DAY  "%(	AddTimefield,AddTimefield)
+						where = wheredate
+					else:
+						pri.error("the parameter ColumnType is not exists or type error!")
+				else:
+					pri.error("the parameter ScheduleType is not exists or type error!")
+		else:
+			pri.error("the parameter Exectimes is not exists or type error!")
+	datax_fdata_cfg = datax_fdata_cfg.replace("${WhereCondition}",where)
+	m = open("/opt/datatom/dana_api/execute_cfg/%s.json"%(path_name), 'w')
+	os.system("> /opt/datatom/dana_api/execute_cfg/%s.json"%(path_name))
+	m.write(datax_fdata_cfg)
+	m.close()
+
+#生成datax全量配置
+def datax_all_file(UnitId,path_name,Dbname):
+	UnitName,MappingList,SourceTableName,XinghuanAddress,XinghuanUsername,XinghuanPassword,PrimaryKey,HttpfsAddress,XinghuanTableName,XinghuanOrcTableName,Exectimes,AddTimefield,ColumnType,ScheduleType,TargetList,Execrate = init(path_name)
+	unitname,databasetype,sourceip,sourceport,sourcedbname,sourceaddress,sourceusername,sourcepassword = source_params(UnitId,Dbname)
+	ScheduleType = str(ScheduleType)
+	ColumnType = ColumnType.lower()
+	Exectimes = str(Exectimes)
+	Execrate = str(Execrate)
+	if Execrate == '2':
+		where = ''
+	else:
+		if databasetype == 'mysql':
+			if ScheduleType == '1':
+				if ColumnType == 'varchar':
+					wherevarchar = "%s < DATE_FORMAT(DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 2 DAY),'%%Y%%m%%d')"%AddTimefield
+					where = wherevarchar
+				elif ColumnType == 'date' or ColumnType == 'timestamp' or ColumnType == 'datetime':
+					wheredate = "%s < DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 2 DAY)"%AddTimefield
+					where = wheredate
+				else:
+					pri.error("the parameter ColumnType is not exists or type error!")
+			elif ScheduleType == '2':
+				if ColumnType == 'varchar':
+					wherevarchar = "%s < DATE_FORMAT(DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 8 DAY),'%%Y%%m%%d')"%AddTimefield
+					where = wherevarchar
+				elif ColumnType == 'date' or  ColumnType =='timestamp' or ColumnType == 'datetime':
+					wheredate = "%s < DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 8 DAY)"%AddTimefield
+					where = wheredate
+				else:
+					pri.error("the parameter ColumnType is not exists or type error!")
+			elif ScheduleType == '3':
+				if ColumnType == 'varchar':
+					wherevarchar = "%s < DATE_FORMAT(DATA_SUB(DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 1 MONTH),INTERVAL 1 DAY),'%%Y%%m%%d')"%(AddTimefield)
+					where = wherevarchar
+				elif ColumnType == 'date' or ColumnType == 'timestamp' or ColumnType == 'datetime':
+					wheredate = "%s < DATA_SUB(DATE_SUB(STR_TO_DATE(${timecolumn},'%%Y%%m%%d'),INTERVAL 1 MONTH),INTERVAL 1 DAY)"%AddTimefield
+					where = wheredate
+				else:
+					pri.error("the parameter ColumnType is not exists or type error!")
+			else:
+				pri.error("the parameter ScheduleType is not exists or type error!")
+		if databasetype == 'oracle' or databasetype == 'dameng':
+			if ScheduleType == '1':
+				if ColumnType == 'varchar2':
+					wherevarchar2 = "%s < to_char(to_date(${timecolumn},'yyyymmdd') - INTERVAL '2' DAY , 'yyyymmdd')"%AddTimefield
+					where = wherevarchar2 
+				elif ColumnType == 'date'  or ColumnType == 'timestamp' or ColumnType == 'datetime':
+					wheredate = "%s < to_date(${timecolumn},'yyyymmdd') - INTERVAL '2' DAY"%AddTimefield
+					where = wheredate
+				else:
+					pri.error("the parameter ColumnType is not exists or type error!")
+			elif ScheduleType == '2':
+				if ColumnType == 'varchar2':
+					wherevarchar2 = "%s < to_char(to_date(${timecolumn},'yyyymmdd') - INTERVAL '8' DAY , 'yyyymmdd')"%AddTimefield
+					where = wherevarchar2 
+				elif ColumnType == 'date'  or ColumnType == 'timestamp' or ColumnType == 'datetime':
+					wheredate = "%s < to_date(${timecolumn},'yyyymmdd') - INTERVAL '8' DAY"%AddTimefield
+					where = wheredate
+				else:
+					pri.error("the parameter ColumnType is not exists or type error!")
+			elif ScheduleType == '3':
+				if ColumnType == 'varchar2':
+					wherevarchar2 = "%s < to_char(to_date(${timecolumn},'yyyymmdd') - INTERVAL '1' MONTH - INTERVAL 1 DAY, 'yyyymmdd')"%AddTimefield
+					where = wherevarchar2 
+				elif ColumnType == 'date'  or ColumnType == 'timestamp' or ColumnType == 'datetime':
+					wheredate = "%s < to_date(${timecolumn},'yyyymmdd') - INTERVAL '1' MONTH - INTERVAL 1 DAY"%AddTimefield
+					where = wheredate
+				else:
+					pri.error("the parameter ColumnType is not exists or type error!")
+			else:
+				pri.error("the parameter ScheduleType is not exists or type error!")
+	datax_fdata_all = datax_update(UnitId,path_name,Dbname)
+	datax_fdata_all = datax_fdata_all.replace("${WhereCondition}",where)
+	m = open("/opt/datatom/dana_api/execute_all/%s.json"%(path_name), 'w')
+	os.system("> /opt/datatom/dana_api/execute_all/%s.json"%(path_name))
+	m.write(datax_fdata_all)
+	m.close()
+
+#生成etl,python文件
+def etl_update(UnitId,path_name,Dbname):
+	UnitName,MappingList,SourceTableName,XinghuanAddress,XinghuanUsername,XinghuanPassword,PrimaryKey,HttpfsAddress,XinghuanTableName,XinghuanOrcTableName,Exectimes,AddTimefield,ColumnType,ScheduleType,TargetList,Execrate = init(path_name)
+	unitname,databasetype,sourceip,sourceport,sourcedbname,sourceaddress,sourceusername,sourcepassword = source_params(UnitId,Dbname)
+	source_tbname = SourceTableName.split('.')[1]
+	source_dbname = SourceTableName.split('.')[0]
+	xinghuan_tbname = XinghuanTableName.split('.')[1]
+	xinghuan_dbname = XinghuanTableName.split('.')[0]
+	xinghuan_orc_tbname = XinghuanOrcTableName.split('.')[1]
+	xinghuan_orc_dbname = XinghuanOrcTableName.split('.')[0]
+	ip_unit = sourceip.split('.')[2]+'_'+sourceip.split('.')[3]
+	httpfs=HttpfsAddress.split('tmp')[0]
+	token=HttpfsAddress.split('guardian_access_token=')[1]
+	httpfsmkdir="%stmp/detuo/?op=MKDIRS&permission=777&guardian_access_token=%s"%(httpfs,token)
+	httpfsput1="%stmp/detuo/%s_%s_%s.txt?op=CREATE&guardian_access_token=%s"%(httpfs,unitname,source_dbname,source_tbname,token)
+	httpfsput2="%stmp/detuo/%s_%s_%s.txt?op=CREATE&data=true&guardian_access_token=%s"%(httpfs,unitname,source_dbname,source_tbname,token)
+	with open("/opt/datatom/dana_api/template/datatom.py",'r') as fdata :
+		fdata = fdata.read().replace("${XinghuanAddress}",XinghuanAddress)
+		fdata = fdata.replace("${Path}",path_name)
+		fdata = fdata.replace("${XinghuanUsername}",XinghuanUsername)
+		fdata = fdata.replace("${XinghuanPassword}",XinghuanPassword)
+		fdata = fdata.replace("${unitname}",unitname)
+		fdata = fdata.replace("${source_dbname}",source_dbname)
+		fdata = fdata.replace("${source_tbname}",source_tbname)
+		fdata = fdata.replace("${httpfsmkdir}",httpfsmkdir)
+		fdata = fdata.replace("${httpfsput1}",httpfsput1)
+		fdata = fdata.replace("${httpfsput2}",httpfsput2)
+		fdata = fdata.replace("${xinghuan_orc_tbname}",xinghuan_orc_tbname)
+		fdata = fdata.replace("${xinghuan_orc_dbname}",xinghuan_orc_dbname)
+		fdata = fdata.replace("${xinghuan_tbname}",xinghuan_tbname)
+		fdata = fdata.replace("${xinghuan_dbname}",xinghuan_dbname)
+		fdata = fdata.replace("${target_field}","("+TargetList+")")
+		fdata = fdata.replace("${original_field}",MappingList)
+		fdata = fdata.replace("${Execrate}",Execrate)
+	return fdata
+
+
+
+def etl_all_file(UnitId,path_name,Dbname):
+	etl_fdata_all = etl_update(UnitId,path_name,Dbname)
+	etl_fdata_all = etl_fdata_all.replace("${exec_datax}","execute_all")
+#	etl_fdata_all = etl_fdata_all.replace("${exec_datax_log}","execute_all_log")
+	m = open("/opt/datatom/dana_api/execute_all/%s.py"%(path_name), 'w')
+	os.system("> /opt/datatom/dana_api/execute_all/%s.py"%(path_name))
+	m.write(etl_fdata_all)
+	m.close()
+
+def etl_cfg_file(UnitId,path_name,Dbname):
+	etl_fdata_cfg = etl_update(UnitId,path_name,Dbname)
+	etl_fdata_cfg = etl_fdata_cfg.replace("${exec_datax}","execute_cfg")
+#	etl_fdata_cfg = etl_fdata_cfg.replace("${exec_datax_log}","execute_add_log")
+	m = open("/opt/datatom/dana_api/execute_cfg/%s.py"%(path_name), 'w')
+	os.system("> /opt/datatom/dana_api/execute_cfg/%s.py"%(path_name))
+	m.write(etl_fdata_cfg)
+	m.close()
+
+if __name__ == '__main__':
+	unitname,databasetype,sourceip,sourceport,sourcedbname,sourceaddress,sourceusername,sourcepassword = source_params('765123','test')
+	UnitName,MappingList,SourceTableName,XinghuanAddress,XinghuanUsername,XinghuanPassword,PrimaryKey,HttpfsAddress,XinghuanTableName,XinghuanOrcTableName,Exectimes,AddTimefield,ColumnType,ScheduleType,TargetList,Execrate = init('huanbaoju_16_87_test_logs_info')
+	source_tbname = SourceTableName.split('.')[1]
+	source_dbname = SourceTableName.split('.')[0]
+	xinghuan_tbname = XinghuanTableName.split('.')[1]
+	xinghuan_dbname = XinghuanTableName.split('.')[0]
+	ip_unit = sourceip.split('.')[2]+'_'+sourceip.split('.')[3]
+	datax_update('765123','huanbaoju_16_87_test_logs_info')
+	datax_cfg_file('765123','huanbaoju_16_87_test_logs_info')
+	datax_all_file('765123','huanbaoju_16_87_test_logs_info')
+	etl_update('765123','huanbaoju_16_87_test_logs_info')
+	etl_cfg_file('765123','huanbaoju_16_87_test_logs_info')
+	etl_all_file('765123','huanbaoju_16_87_test_logs_info')
+
+	#datax_update(UnitId)
+	#执行datax脚本
+	#os.system("python /opt/datatom/datax/datax/bin/datax.py /opt/datatom/dana_api/execute_cfg/%s_%s_%s_%s.json"%(unitname,ip_unit,source_dbname,source_tbname))
+	#filePath="/opt/datatom/script/%s/data/%s_%s"%(unitname.encode('utf-8'),sourcedbname,SourceTableName)
+	#etl_update(UnitId)
+	#os.system("python /opt/datatom/dana_api/execute_cfg/%s_%s_%s_%s.py"%(unitname,ip_unit,source_dbname,source_tbname))
+	#upload(filePath)

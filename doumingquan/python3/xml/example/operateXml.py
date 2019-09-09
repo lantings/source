@@ -21,11 +21,12 @@ class OpreateXml():
         print(xmlFilePath)
         # try:
         tree = ET.parse(xmlFilePath)
+
         print ("tree type:", type(tree))
 
         # 获得根节点
         root = tree.getroot()
-        # print(root)
+        print(root)
 
         for neighbor in root.iter('neighbor'):
             print (neighbor.attrib)
