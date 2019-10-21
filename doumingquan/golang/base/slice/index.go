@@ -1,9 +1,20 @@
 package main
-import "fmt"
+
+import (
+   "fmt"
+   "unsafe"
+)
 
 func main(){
 //make定义长度为3的数组***默认值是3个nil***
-var numbers = make([]int,6,6) 
+var numbers = make([]int,6,6)
+arr:=[10]int{1,2,3,4,5,6,7,8,9,10}
+test:= arr[1:5:7]
+println("test=",test)
+println("test length=",len(test))
+println("test caps=",cap(test))
+println("test unsafe.size=",unsafe.Sizeof(test))
+
 //赋值
 numbers = []int{4,24,99,46,29,55}
 //定义并赋值

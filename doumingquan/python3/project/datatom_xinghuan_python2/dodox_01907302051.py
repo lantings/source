@@ -269,6 +269,7 @@ class OperateDodox():
             #新建脚本
             res = self.new_dev(scriptName, context, dirName, scriptType)
             res_u = json.loads(res.encode('utf-8'))
+
             if res_u['code'] == 200:
                 if filePath.find(postfix) != -1:
                     scriptName1 = filePath.split('/')[-1]

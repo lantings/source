@@ -2,6 +2,19 @@
 官方文档
 https://golang.google.cn/doc/
 
+go轻松学
+https://www.golang123.com/book/16?chapterID=290
+
+go语言中文网
+https://books.studygolang.com/gopl-zh/ch0/ch0-01.html
+
+学习笔记
+https://github.com/qyuhen/book
+
+https://learnku.com/docs/build-web-application-with-golang/025-object-oriented/3163
+
+
+
 
 
 

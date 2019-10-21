@@ -1,0 +1,9 @@
+windowsœ¬‘ÿiris
+
+(https://goproxy.io/zh/)
+
+
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://goproxy.io,direct
+
+go get -u github.com/kataras/iris

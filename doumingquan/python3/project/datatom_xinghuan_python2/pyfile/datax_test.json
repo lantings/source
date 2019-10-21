@@ -1,0 +1,44 @@
+{
+        "job": {
+            "setting": {
+                "speed": {
+                    "channel":2
+                },
+                "errorLimit": {
+                }
+            },
+        "content": [{
+            "reader": {
+                "name": "postgresqlreader",
+                "parameter": {
+                    "column": ["id","username","password","address","tel","nick_name","area_id","area_name","phone","groupid","create_user", "create_time","create_nickname","status","salt","score","folder","company_name","street_id","street_name", "com_id","com_name","court_id","court_name"],
+                    "connection": [
+                        {
+                            "jdbcUrl": ["jdbc:postgresql://47.94.252.159:5432/postgres"],
+                            "table": ["chaoyang_sys_user.zhwy_new_user"]
+                        }
+                    ],
+                    "password": "postgres",
+                    "username": "postgres",
+                    "where": ""
+                }
+            },
+            "writer": {
+                "name": "postgresqlwriter",
+                "parameter": {
+                    "column": ["id","username","password","address","tel","nick_name","area_id","area_name","phone","groupid","create_user", "create_time","create_nickname","status","salt","score","folder","company_name","street_id","street_name", "com_id","com_name","court_id","court_name"],
+                    "connection": [
+                        {
+                            "jdbcUrl": ["jdbc:postgresql://47.94.252.159:5432/postgres"],
+                            "table": ["chaoyang_sys_user.zhwy_new_user2"]
+                        }
+                    ],
+                    "password": "postgres",
+                    "postSql": [],
+                    "preSql": [],
+                    "username": "postgres"
+                    }
+            }
+        }]
+    }
+}
