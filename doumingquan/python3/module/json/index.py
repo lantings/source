@@ -12,5 +12,5 @@ print(datas)
 
 # loads()将json对象转化成python对象
 info = json.loads(datas)
-print(info['password'])
+print(info)
 

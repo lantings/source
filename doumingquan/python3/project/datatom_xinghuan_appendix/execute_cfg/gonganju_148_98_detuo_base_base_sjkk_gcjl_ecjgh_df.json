@@ -1,0 +1,43 @@
+{
+        "job": {
+            "setting": {
+                "speed": {
+                    "channel":2
+                },
+                "errorLimit": {
+                }
+            },
+        "content": [{
+            "reader": {
+                "name": "mysqlreader",
+                "parameter": {
+                    "connection": [{
+                        "jdbcUrl": [
+                            "jdbc:mysql://172.27.148.98:3306/detuo_base"
+                        ],
+                        "table": [
+                            "detuo_base.BASE_SJKK_GCJL_ECJGH_DF"
+                        ]
+                    }],
+                    "column":["REPLACE(REPLACE(JLBH, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(XZQH, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(KKBH, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(CDBH, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(HPHM, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(HPZL, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(JGSJ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(SBBH, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(CDFX, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(XSZT, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(TPLX, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(TZTP, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(QJTP, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(RKSJ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(YZSJ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(SJCZ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(SJLY, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(DWD_LOADTIME, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(DWD_UPDATETIME, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(DWD_YXBZ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(DT, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(JHPT_UPDATE_TIME, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(JHPT_DELETE, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')"],
+                    "fetchSize":2048,
+                    "splitPk": "",
+                    "password": "DT@pt18cg",
+                    "username": "detuo",
+                    "where": "JHPT_UPDATE_TIME >= DATE_SUB(STR_TO_DATE(${timecolumn},'%Y%m%d'),INTERVAL 2 DAY) and JHPT_UPDATE_TIME <  DATE_SUB(STR_TO_DATE(${timecolumn},'%Y%m%d'),INTERVAL 1 DAY)"
+                }
+            },
+            "writer": {
+                "name": "txtfilewriter",
+                "parameter": {
+                    "path": "/opt/datatom/dana_appendix_api/data/gonganju/detuo_base_BASE_SJKK_GCJL_ECJGH_DF",
+                    "writeMode": "truncate",
+                    "fileName": "detuo_base_BASE_SJKK_GCJL_ECJGH_DF",
+                    "fieldDelimiter": "\u0001",
+                    "encoding": "utf8",
+                    "dateFormat": "yyyy-MM-dd HH:mm:ss"
+                }
+            }
+        }]
+    }
+}

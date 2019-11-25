@@ -1,0 +1,43 @@
+{
+        "job": {
+            "setting": {
+                "speed": {
+                    "channel":2
+                },
+                "errorLimit": {
+                }
+            },
+        "content": [{
+            "reader": {
+                "name": "mysqlreader",
+                "parameter": {
+                    "connection": [{
+                        "jdbcUrl": [
+                            "jdbc:mysql://172.26.16.87:3306/test"
+                        ],
+                        "table": [
+                            "test.SYRK_T_ZP_EDZ"
+                        ]
+                    }],
+                    "column":["REPLACE(REPLACE(ID, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(ZJHM, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "ZP", "REPLACE(REPLACE(ZPRQ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(SJGXSJ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(PHOTO_NO, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(JLRKSJ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')", "REPLACE(REPLACE(RID, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')"],
+                    "fetchSize":2048,
+                    "splitPk": "",
+                    "password": "datatom",
+                    "username": "root",
+                    "where": ""
+                }
+            },
+            "writer": {
+                "name": "txtfilewriter",
+                "parameter": {
+                    "path": "/opt/datatom/dana_appendix_api/data/huanbaoju/test_SYRK_T_ZP_EDZ",
+                    "writeMode": "truncate",
+                    "fileName": "test_SYRK_T_ZP_EDZ",
+                    "fieldDelimiter": "\u0001",
+                    "encoding": "utf8",
+                    "dateFormat": "yyyy-MM-dd HH:mm:ss"
+                }
+            }
+        }]
+    }
+}

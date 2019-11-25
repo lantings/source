@@ -23,12 +23,15 @@ class add(tornado.web.RequestHandler):
     def get(self):
         self.write("hello world!")
     def post(self):
+        dsip = '172.26.16.90'
         res = self.request.body.decode('utf-8')
         res = json.loads(res)
 
         #判断参数
-        keysList=['UnitId','UnitName','XinghuanAddress','HttpfsAddress','SourceTableName','XinghuanTableName','MappingList','Exectimes','WorkflowTime','AddTimefield','TargetList','Execrate']
+        keysList=['UnitId','UnitName','XinghuanAddress','HttpfsAddress','SourceTableName','XinghuanTableName','MappingList','Exectimes','WorkflowTime','AddTimefield','TargetList','Execrate','Node']
+
         lostColumns,ress = check_para_num(res,keysList)
+
         if len(lostColumns) > 0:
            self.write(ress)
         else:
@@ -51,6 +54,7 @@ class add(tornado.web.RequestHandler):
             AddTimefield = res['AddTimefield']
             ColumnType = res['ColumnType']
             Execrate = res['Execrate']
+            Node = res['Node']
             unitname,databasetype,sourceip,sourceport,sourcedbname,sourceaddress,sourceusername,sourcepassword = source_params(UnitId, Dbname)
             #make conf name
             #unitname = 'qingxiangju'
@@ -106,7 +110,7 @@ class add(tornado.web.RequestHandler):
             #    self.write(res)
             #else:
             #    self.write(re_info)
-            res = dodoer.create_all_nodes(unitname,['/opt/datatom/dana_api/execute_cfg/%s.py'%(WorkflowName)], WorkflowName,UnitName,'.py','python','172.26.16.90',Exectimes,ScheduleDetail,ScheduleType,recordTable)
+            res = dodoer.create_all_nodes(unitname,['/opt/datatom/dana_api/execute_cfg/%s.py'%(WorkflowName)], WorkflowName,UnitName,'.py','python',Node,Exectimes,ScheduleDetail,ScheduleType,recordTable)
             self.write(json.loads(res))
 
 #下线任务并删除工作流
@@ -157,7 +161,7 @@ class stopjob(tornado.web.RequestHandler):
             res = dodoer.stop_job(wfid)
             logger.info(res)
             self.write(json.loads(res))
-
+# class getToken(tornado.web.RequestHandler):
 application = tornado.web.Application([
     (r"/dana/workflow/add", add),
     (r"/dana/workflow/delete", delete),

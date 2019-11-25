@@ -10,7 +10,7 @@ import logging
 import xml.etree.ElementTree as ET
 import commands
 import psycopg2
-from xpinyin import Pinyin
+# from xpinyin import Pinyin
 import re
 import cx_Oracle
 import datetime
@@ -53,6 +53,7 @@ class MyConfigParser(ConfigParser.ConfigParser):
 
 #连接源数据库获取源数据信息
 def source_params(UnitId,Dbname):
+	# host = ""
 	try:
 		conn = psycopg2.connect(database="postgres", user="stork",password="stork", host="172.26.16.90", port="14103")
 		cursor = conn.cursor()

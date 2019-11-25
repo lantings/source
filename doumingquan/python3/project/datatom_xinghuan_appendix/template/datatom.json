@@ -1,0 +1,43 @@
+{
+        "job": {
+            "setting": {
+                "speed": {
+                    "channel":2
+                },
+                "errorLimit": {
+                }
+            },
+        "content": [{
+            "reader": {
+                "name": "${DatabaseType}",
+                "parameter": {
+                    "connection": [{
+                        "jdbcUrl": [
+                            "${SourceAddress}"
+                        ],
+                        "table": [
+                            "${SourceTableName}"
+                        ]
+                    }],
+                    "column":$MappingList,
+                    "fetchSize":2048,
+                    "splitPk": "",
+                    "password": "${SourcePassword}",
+                    "username": "${SourceUsername}",
+                    "where": "${WhereCondition}"
+                }
+            },
+            "writer": {
+                "name": "txtfilewriter",
+                "parameter": {
+                    "path": "/opt/datatom/dana_appendix_api/data/${unitName}/${source_dbname}_${source_tbname}",
+                    "writeMode": "truncate",
+                    "fileName": "${source_dbname}_${source_tbname}",
+                    "fieldDelimiter": "\u0001",
+                    "encoding": "utf8",
+                    "dateFormat": "yyyy-MM-dd HH:mm:ss"
+                }
+            }
+        }]
+    }
+}

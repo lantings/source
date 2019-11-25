@@ -14,9 +14,13 @@ print(allfile)
 #删除一个文件
 #os.remove()
 
-#运行shell命令
+#运行shell命令返回状态
 #os.system('cmd')
 os.system('ls&&pwd')
+
+#运行shell命令返回结果
+#os.system('cmd')
+os.open('ls&&pwd')
 
 #os.path.isfile()和os.path.isdir()函数分别检验给出的路径是一个文件还是目录
 

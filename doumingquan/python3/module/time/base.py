@@ -6,7 +6,7 @@ print(floats)
 
 
 mk = time.mktime(time.localtime())
-print(mk)
+print(int(mk))
 #1565266709.0
 
 local = time.localtime()
@@ -15,7 +15,8 @@ locals = time.localtime(time.time())
 print(locals)
 
 classic = time.strftime("%Y-%m-%d %X",time.localtime())
-print(classic)
+classic = time.strftime("%Y%m%d ",time.localtime())
+print("this is classic time",classic)
 #2019-08-08 20:21:25
 
 #生成固定格式的时间表示格式

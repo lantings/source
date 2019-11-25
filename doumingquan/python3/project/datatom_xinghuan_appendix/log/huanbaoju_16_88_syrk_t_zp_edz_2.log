@@ -1,0 +1,145 @@
+
+DataX (DATAX-OPENSOURCE-3.0), From Alibaba !
+Copyright (C) 2010-2017, Alibaba Group. All Rights Reserved.
+
+
+2019-11-20 20:01:31.188 [main] INFO  VMInfo - VMInfo# operatingSystem class => sun.management.OperatingSystemImpl
+2019-11-20 20:01:31.197 [main] INFO  Engine - the machine info  => 
+
+	osInfo:	Oracle Corporation 1.8 25.221-b11
+	jvmInfo:	Linux amd64 3.10.0-862.el7.x86_64
+	cpu num:	16
+
+	totalPhysicalMemory:	-0.00G
+	freePhysicalMemory:	-0.00G
+	maxFileDescriptorCount:	-1
+	currentOpenFileDescriptorCount:	-1
+
+	GC Names	[PS MarkSweep, PS Scavenge]
+
+	MEMORY_NAME                    | allocation_size                | init_size                      
+	PS Eden Space                  | 256.00MB                       | 256.00MB                       
+	Code Cache                     | 240.00MB                       | 2.44MB                         
+	Compressed Class Space         | 1,024.00MB                     | 0.00MB                         
+	PS Survivor Space              | 42.50MB                        | 42.50MB                        
+	PS Old Gen                     | 683.00MB                       | 683.00MB                       
+	Metaspace                      | -0.00MB                        | 0.00MB                         
+
+
+2019-11-20 20:01:31.218 [main] INFO  Engine - 
+{
+	"content":[
+		{
+			"reader":{
+				"name":"oraclereader",
+				"parameter":{
+					"column":[
+						"REPLACE(REPLACE(ID, CHR(10), '\\u200b'), CHR(13),'\\u200c')",
+						"REPLACE(REPLACE(ZJHM, CHR(10), '\\u200b'), CHR(13),'\\u200c')",
+						"ZP",
+						"REPLACE(REPLACE(ZPRQ, CHR(10), '\\u200b'), CHR(13),'\\u200c')",
+						"REPLACE(REPLACE(SJGXSJ, CHR(10), '\\u200b'), CHR(13),'\\u200c')",
+						"REPLACE(REPLACE(PHOTO_NO, CHR(10), '\\u200b'), CHR(13),'\\u200c')",
+						"REPLACE(REPLACE(JLRKSJ, CHR(10), '\\u200b'), CHR(13),'\\u200c')",
+						"REPLACE(REPLACE(RID, CHR(10), '\\u200b'), CHR(13),'\\u200c')"
+					],
+					"connection":[
+						{
+							"jdbcUrl":[
+								"jdbc:oracle:thin:@172.26.16.88:1522/orcl1"
+							],
+							"table":[
+								"SYRK.T_ZP_EDZ_2"
+							]
+						}
+					],
+					"fetchSize":2048,
+					"password":"****",
+					"splitPk":"",
+					"username":"SYRK",
+					"where":""
+				}
+			},
+			"writer":{
+				"name":"txtfilewriter",
+				"parameter":{
+					"dateFormat":"yyyy-MM-dd HH:mm:ss",
+					"encoding":"utf8",
+					"fieldDelimiter":"\u0001",
+					"fileName":"SYRK_T_ZP_EDZ_2",
+					"path":"/opt/datatom/dana_appendix_api/data/huanbaoju/SYRK_T_ZP_EDZ_2",
+					"writeMode":"truncate"
+				}
+			}
+		}
+	],
+	"setting":{
+		"errorLimit":{},
+		"speed":{
+			"channel":2
+		}
+	}
+}
+
+2019-11-20 20:01:31.236 [main] WARN  Engine - prioriy set to 0, because NumberFormatException, the value is: null
+2019-11-20 20:01:31.238 [main] INFO  PerfTrace - PerfTrace traceId=job_-1, isEnable=false, priority=0
+2019-11-20 20:01:31.238 [main] INFO  JobContainer - DataX jobContainer starts job.
+2019-11-20 20:01:31.241 [main] INFO  JobContainer - Set jobId = 0
+2019-11-20 20:01:41.565 [job-0] INFO  OriginalConfPretreatmentUtil - Available jdbcUrl:jdbc:oracle:thin:@172.26.16.88:1522/orcl1.
+2019-11-20 20:01:51.667 [job-0] INFO  OriginalConfPretreatmentUtil - table:[SYRK.T_ZP_EDZ_2] has columns:[ID,ZJHM,ZP,ZPRQ,SJGXSJ,PHOTO_NO,JLRKSJ,RID].
+2019-11-20 20:01:51.715 [job-0] INFO  JobContainer - jobContainer starts to do prepare ...
+2019-11-20 20:01:51.715 [job-0] INFO  JobContainer - DataX Reader.Job [oraclereader] do prepare work .
+2019-11-20 20:01:51.716 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] do prepare work .
+2019-11-20 20:01:51.716 [job-0] INFO  TxtFileWriter$Job - 由于您配置了writeMode truncate, 开始清理 [/opt/datatom/dana_appendix_api/data/huanbaoju/SYRK_T_ZP_EDZ_2] 下面以 [SYRK_T_ZP_EDZ_2] 开头的内容
+2019-11-20 20:01:51.718 [job-0] INFO  JobContainer - jobContainer starts to do split ...
+2019-11-20 20:01:51.719 [job-0] INFO  JobContainer - Job set Channel-Number to 2 channels.
+2019-11-20 20:01:51.723 [job-0] INFO  JobContainer - DataX Reader.Job [oraclereader] splits to [1] tasks.
+2019-11-20 20:01:51.723 [job-0] INFO  TxtFileWriter$Job - begin do split...
+2019-11-20 20:01:51.724 [job-0] INFO  TxtFileWriter$Job - splited write file name:[SYRK_T_ZP_EDZ_2__ecef6d25_b4ff_4a8e_b955_e6e5ef37fc63]
+2019-11-20 20:01:51.724 [job-0] INFO  TxtFileWriter$Job - end do split.
+2019-11-20 20:01:51.725 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] splits to [1] tasks.
+2019-11-20 20:01:51.744 [job-0] INFO  JobContainer - jobContainer starts to do schedule ...
+2019-11-20 20:01:51.747 [job-0] INFO  JobContainer - Scheduler starts [1] taskGroups.
+2019-11-20 20:01:51.750 [job-0] INFO  JobContainer - Running by standalone Mode.
+2019-11-20 20:01:51.758 [taskGroup-0] INFO  TaskGroupContainer - taskGroupId=[0] start [1] channels for [1] tasks.
+2019-11-20 20:01:51.767 [taskGroup-0] INFO  Channel - Channel set byte_speed_limit to -1, No bps activated.
+2019-11-20 20:01:51.767 [taskGroup-0] INFO  Channel - Channel set record_speed_limit to -1, No tps activated.
+2019-11-20 20:01:51.783 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] taskId[0] attemptCount[1] is started
+2019-11-20 20:01:51.788 [0-0-0-writer] INFO  TxtFileWriter$Task - begin do write...
+2019-11-20 20:01:51.790 [0-0-0-writer] INFO  TxtFileWriter$Task - write to file : [/opt/datatom/dana_appendix_api/data/huanbaoju/SYRK_T_ZP_EDZ_2/SYRK_T_ZP_EDZ_2__ecef6d25_b4ff_4a8e_b955_e6e5ef37fc63]
+2019-11-20 20:01:51.796 [0-0-0-reader] INFO  CommonRdbmsReader$Task - Begin to read record by Sql: [select REPLACE(REPLACE(ID, CHR(10), '\u200b'), CHR(13),'\u200c'),REPLACE(REPLACE(ZJHM, CHR(10), '\u200b'), CHR(13),'\u200c'),ZP,REPLACE(REPLACE(ZPRQ, CHR(10), '\u200b'), CHR(13),'\u200c'),REPLACE(REPLACE(SJGXSJ, CHR(10), '\u200b'), CHR(13),'\u200c'),REPLACE(REPLACE(PHOTO_NO, CHR(10), '\u200b'), CHR(13),'\u200c'),REPLACE(REPLACE(JLRKSJ, CHR(10), '\u200b'), CHR(13),'\u200c'),REPLACE(REPLACE(RID, CHR(10), '\u200b'), CHR(13),'\u200c') from SYRK.T_ZP_EDZ_2 
+] jdbcUrl:[jdbc:oracle:thin:@172.26.16.88:1522/orcl1].
+2019-11-20 20:02:01.776 [job-0] INFO  StandAloneJobContainerCommunicator - Total 0 records, 0 bytes | Speed 0B/s, 0 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.000s |  All Task WaitReaderTime 0.000s | Percentage 0.00%
+2019-11-20 20:02:02.105 [0-0-0-reader] INFO  CommonRdbmsReader$Task - Finished read record by Sql: [select REPLACE(REPLACE(ID, CHR(10), '\u200b'), CHR(13),'\u200c'),REPLACE(REPLACE(ZJHM, CHR(10), '\u200b'), CHR(13),'\u200c'),ZP,REPLACE(REPLACE(ZPRQ, CHR(10), '\u200b'), CHR(13),'\u200c'),REPLACE(REPLACE(SJGXSJ, CHR(10), '\u200b'), CHR(13),'\u200c'),REPLACE(REPLACE(PHOTO_NO, CHR(10), '\u200b'), CHR(13),'\u200c'),REPLACE(REPLACE(JLRKSJ, CHR(10), '\u200b'), CHR(13),'\u200c'),REPLACE(REPLACE(RID, CHR(10), '\u200b'), CHR(13),'\u200c') from SYRK.T_ZP_EDZ_2 
+] jdbcUrl:[jdbc:oracle:thin:@172.26.16.88:1522/orcl1].
+2019-11-20 20:02:02.263 [0-0-0-writer] INFO  TxtFileWriter$Task - end do write
+2019-11-20 20:02:02.301 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] taskId[0] is successed, used[10519]ms
+2019-11-20 20:02:02.302 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] completed it's tasks.
+2019-11-20 20:02:11.778 [job-0] INFO  StandAloneJobContainerCommunicator - Total 99 records, 1697555 bytes | Speed 165.78KB/s, 9 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.000s |  All Task WaitReaderTime 10.218s | Percentage 100.00%
+2019-11-20 20:02:11.778 [job-0] INFO  AbstractScheduler - Scheduler accomplished all tasks.
+2019-11-20 20:02:11.779 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] do post work.
+2019-11-20 20:02:11.779 [job-0] INFO  JobContainer - DataX Reader.Job [oraclereader] do post work.
+2019-11-20 20:02:11.779 [job-0] INFO  JobContainer - DataX jobId [0] completed successfully.
+2019-11-20 20:02:11.780 [job-0] INFO  HookInvoker - No hook invoked, because base dir not exists or is a file: /opt/datatom/datax/hook
+2019-11-20 20:02:11.781 [job-0] INFO  JobContainer - 
+	 [total cpu info] => 
+		averageCpu                     | maxDeltaCpu                    | minDeltaCpu                    
+		-1.00%                         | -1.00%                         | -1.00%
+                        
+
+	 [total gc info] => 
+		 NAME                 | totalGCCount       | maxDeltaGCCount    | minDeltaGCCount    | totalGCTime        | maxDeltaGCTime     | minDeltaGCTime     
+		 PS MarkSweep         | 0                  | 0                  | 0                  | 0.000s             | 0.000s             | 0.000s             
+		 PS Scavenge          | 1                  | 1                  | 1                  | 0.010s             | 0.010s             | 0.010s             
+
+2019-11-20 20:02:11.781 [job-0] INFO  JobContainer - PerfTrace not enable!
+2019-11-20 20:02:11.781 [job-0] INFO  StandAloneJobContainerCommunicator - Total 99 records, 1697555 bytes | Speed 82.89KB/s, 4 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.000s |  All Task WaitReaderTime 10.218s | Percentage 100.00%
+2019-11-20 20:02:11.782 [job-0] INFO  JobContainer - 
+任务启动时刻                    : 2019-11-20 20:01:31
+任务结束时刻                    : 2019-11-20 20:02:11
+任务总计耗时                    :                 40s
+任务平均流量                    :           82.89KB/s
+记录写入速度                    :              4rec/s
+读出记录总数                    :                  99
+读写失败总数                    :                   0
+

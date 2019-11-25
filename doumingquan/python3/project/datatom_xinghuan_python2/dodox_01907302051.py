@@ -40,24 +40,26 @@ logger = logging.getLogger(__name__)
 class OperateDodox():
     def __init__(self):
         self.dber = OperDb()
-        self.login_url ="http://172.26.16.90/danastudio/login"
+        danastudio = "http://172.26.16.90"
+        self.login_url =danastudio+"/danastudio/login"
         self.create_url= "http://127.0.0.1/danastudio/ants/folder/create"
-        self.upload_url = "http://172.26.16.90/danastudio/dodox/filemanager/file/upload"
-        self.workflow_url = "http://172.26.16.90/danastudio/ants/workflow/new"
-        self.script2wf_url = "http://172.26.16.90/danastudio/ants/workflow/save"
-        self.listall_url = "http://172.26.16.90/danastudio/ants/folder/list"
-        #self.search_url = "http://172.26.16.90/danastudio/ants/develop/search"
-        self.submit_url = "http://172.26.16.90/danastudio/ants/workflow/submit"
-        self.select_script_url = "http://172.26.16.90/danastudio/ants/"
-        self.list_job_url = "http://172.26.16.90/danastudio/dodox/job/list"
-        self.runnow_url = "http://172.26.16.90/danastudio/dodox/job/runnow"
-        self.get_log_url = "http://172.26.16.90/danastudio/dodox/job/record/get"
-        self.new_dev_url = "http://172.26.16.90/danastudio/ants/develop/new/dev"
-        self.down_url = "http://172.26.16.90/danastudio/ants/workflow/down"
-        self.del_wf_url = "http://172.26.16.90/danastudio/ants/workflow/delete"
-        self.stop_url = "http://172.26.16.90/danastudio/dodox/job/stop"
-        self.refresh_token_url = "http://172.26.16.90/danastudio/refresh_token"
+        self.upload_url = danastudio+"/danastudio/dodox/filemanager/file/upload"
+        self.workflow_url = danastudio+"/danastudio/ants/workflow/new"
+        self.script2wf_url = danastudio+"/danastudio/ants/workflow/save"
+        self.listall_url = danastudio+"/danastudio/ants/folder/list"
+        #self.search_url = danastudio+"http://172.26.16.90/danastudio/ants/develop/search"
+        self.submit_url = danastudio+"/danastudio/ants/workflow/submit"
+        self.select_script_url = danastudio+"/danastudio/ants/"
+        self.list_job_url = danastudio+"/danastudio/dodox/job/list"
+        self.runnow_url = danastudio+"/danastudio/dodox/job/runnow"
+        self.get_log_url = danastudio+"/danastudio/dodox/job/record/get"
+        self.new_dev_url = danastudio+"/danastudio/ants/develop/new/dev"
+        self.down_url = danastudio+"/danastudio/ants/workflow/down"
+        self.del_wf_url = danastudio+"danastudio/ants/workflow/delete"
+        self.stop_url = danastudio+"/danastudio/dodox/job/stop"
+        self.refresh_token_url = danastudio+"/danastudio/refresh_token"
 
+#DS 用户/刷新用户登录状态
         self.token = self.refresh_token()
         if self.token.find('Bearer') == -1:
             logger.info('token is error, please check public.token_info and dana')
@@ -78,6 +80,7 @@ class OperateDodox():
         }
         res = self.request_func(data,self.create_url)
         return res
+
     def login_ds(self,user,psword):
         data = {
             "username": user,
@@ -383,6 +386,7 @@ class OperateDodox():
             if status == 'WAITING':
                 #运行任务
                 res = self.job_runnow(wfid, userid)
+                res = {"code": 200, "status": status,"msg":"任务启动成功"}
                 return res
         else:
             return res

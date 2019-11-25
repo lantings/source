@@ -1,0 +1,43 @@
+{
+        "job": {
+            "setting": {
+                "speed": {
+                    "channel":2
+                },
+                "errorLimit": {
+                }
+            },
+        "content": [{
+            "reader": {
+                "name": "oraclereader",
+                "parameter": {
+                    "connection": [{
+                        "jdbcUrl": [
+                            "jdbc:oracle:thin:@172.26.16.88:1522/orcl1"
+                        ],
+                        "table": [
+                            "SYRK.T_ZP_EDZ_2"
+                        ]
+                    }],
+                    "column":["REPLACE(REPLACE(ID, CHR(10), '\\u200b'), CHR(13),'\\u200c')", "REPLACE(REPLACE(ZJHM, CHR(10), '\\u200b'), CHR(13),'\\u200c')", 'ZP', "REPLACE(REPLACE(ZPRQ, CHR(10), '\\u200b'), CHR(13),'\\u200c')", "REPLACE(REPLACE(SJGXSJ, CHR(10), '\\u200b'), CHR(13),'\\u200c')", "REPLACE(REPLACE(PHOTO_NO, CHR(10), '\\u200b'), CHR(13),'\\u200c')", "REPLACE(REPLACE(JLRKSJ, CHR(10), '\\u200b'), CHR(13),'\\u200c')", "REPLACE(REPLACE(RID, CHR(10), '\\u200b'), CHR(13),'\\u200c')"],
+                    "fetchSize":2048,
+                    "splitPk": "",
+                    "password": "SYRK",
+                    "username": "SYRK",
+                    "where": ""
+                }
+            },
+            "writer": {
+                "name": "txtfilewriter",
+                "parameter": {
+                    "path": "/opt/datatom/dana_appendix_api/data/huanbaoju/SYRK_T_ZP_EDZ_2",
+                    "writeMode": "truncate",
+                    "fileName": "SYRK_T_ZP_EDZ_2",
+                    "fieldDelimiter": "\u0001",
+                    "encoding": "utf8",
+                    "dateFormat": "yyyy-MM-dd HH:mm:ss"
+                }
+            }
+        }]
+    }
+}

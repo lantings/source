@@ -1,0 +1,160 @@
+
+DataX (DATAX-OPENSOURCE-3.0), From Alibaba !
+Copyright (C) 2010-2017, Alibaba Group. All Rights Reserved.
+
+
+2019-11-24 02:04:34.834 [main] INFO  VMInfo - VMInfo# operatingSystem class => sun.management.OperatingSystemImpl
+2019-11-24 02:04:34.841 [main] INFO  Engine - the machine info  => 
+
+	osInfo:	Oracle Corporation 1.8 25.161-b14
+	jvmInfo:	Linux amd64 3.10.0-862.el7.x86_64
+	cpu num:	16
+
+	totalPhysicalMemory:	-0.00G
+	freePhysicalMemory:	-0.00G
+	maxFileDescriptorCount:	-1
+	currentOpenFileDescriptorCount:	-1
+
+	GC Names	[PS MarkSweep, PS Scavenge]
+
+	MEMORY_NAME                    | allocation_size                | init_size                      
+	PS Eden Space                  | 256.00MB                       | 256.00MB                       
+	Code Cache                     | 240.00MB                       | 2.44MB                         
+	Compressed Class Space         | 1,024.00MB                     | 0.00MB                         
+	PS Survivor Space              | 42.50MB                        | 42.50MB                        
+	PS Old Gen                     | 683.00MB                       | 683.00MB                       
+	Metaspace                      | -0.00MB                        | 0.00MB                         
+
+
+2019-11-24 02:04:34.862 [main] INFO  Engine - 
+{
+	"content":[
+		{
+			"reader":{
+				"name":"mysqlreader",
+				"parameter":{
+					"column":[
+						"REPLACE(REPLACE(JLBH, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(XZQH, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(KKBH, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(CDBH, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(HPHM, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(HPZL, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(JGSJ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(SBBH, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(CDFX, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(XSZT, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(TPLX, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(TZTP, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(QJTP, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(RKSJ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(YZSJ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(SJCZ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(SJLY, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(DWD_LOADTIME, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(DWD_UPDATETIME, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(DWD_YXBZ, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(DT, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(JHPT_UPDATE_TIME, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')",
+						"REPLACE(REPLACE(JHPT_DELETE, CHAR(10), '\\u200b'), CHAR(13),'\\u200c')"
+					],
+					"connection":[
+						{
+							"jdbcUrl":[
+								"jdbc:mysql://172.27.148.98:3306/detuo_base"
+							],
+							"table":[
+								"detuo_base.BASE_SJKK_GCJL_ECJGH_DF"
+							]
+						}
+					],
+					"fetchSize":2048,
+					"password":"*********",
+					"splitPk":"",
+					"username":"detuo",
+					"where":"JHPT_UPDATE_TIME >= DATE_SUB(STR_TO_DATE(20191124,'%Y%m%d'),INTERVAL 2 DAY) and JHPT_UPDATE_TIME <  DATE_SUB(STR_TO_DATE(20191124,'%Y%m%d'),INTERVAL 1 DAY)"
+				}
+			},
+			"writer":{
+				"name":"txtfilewriter",
+				"parameter":{
+					"dateFormat":"yyyy-MM-dd HH:mm:ss",
+					"encoding":"utf8",
+					"fieldDelimiter":"\u0001",
+					"fileName":"detuo_base_BASE_SJKK_GCJL_ECJGH_DF",
+					"path":"/opt/datatom/dana_appendix_api/data/gonganju/detuo_base_BASE_SJKK_GCJL_ECJGH_DF",
+					"writeMode":"truncate"
+				}
+			}
+		}
+	],
+	"setting":{
+		"errorLimit":{},
+		"speed":{
+			"channel":2
+		}
+	}
+}
+
+2019-11-24 02:04:34.879 [main] WARN  Engine - prioriy set to 0, because NumberFormatException, the value is: null
+2019-11-24 02:04:34.881 [main] INFO  PerfTrace - PerfTrace traceId=job_-1, isEnable=false, priority=0
+2019-11-24 02:04:34.881 [main] INFO  JobContainer - DataX jobContainer starts job.
+2019-11-24 02:04:34.883 [main] INFO  JobContainer - Set jobId = 0
+2019-11-24 02:04:34.890 [job-0] WARN  MysqlReader$Job - 对 mysqlreader 不需要配置 fetchSize, mysqlreader 将会忽略这项配置. 如果您不想再看到此警告,请去除fetchSize 配置.
+2019-11-24 02:04:35.199 [job-0] INFO  OriginalConfPretreatmentUtil - Available jdbcUrl:jdbc:mysql://172.27.148.98:3306/detuo_base?yearIsDateType=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&rewriteBatchedStatements=true.
+2019-11-24 02:04:35.213 [job-0] INFO  OriginalConfPretreatmentUtil - table:[detuo_base.BASE_SJKK_GCJL_ECJGH_DF] has columns:[jlbh,xzqh,kkbh,cdbh,hphm,hpzl,jgsj,sbbh,cdfx,xszt,tplx,tztp,qjtp,rksj,yzsj,sjcz,sjly,dwd_loadtime,dwd_updatetime,dwd_yxbz,dt,jhpt_update_time,jhpt_delete].
+2019-11-24 02:04:35.269 [job-0] INFO  JobContainer - jobContainer starts to do prepare ...
+2019-11-24 02:04:35.270 [job-0] INFO  JobContainer - DataX Reader.Job [mysqlreader] do prepare work .
+2019-11-24 02:04:35.270 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] do prepare work .
+2019-11-24 02:04:35.270 [job-0] INFO  TxtFileWriter$Job - 由于您配置了writeMode truncate, 开始清理 [/opt/datatom/dana_appendix_api/data/gonganju/detuo_base_BASE_SJKK_GCJL_ECJGH_DF] 下面以 [detuo_base_BASE_SJKK_GCJL_ECJGH_DF] 开头的内容
+2019-11-24 02:04:35.272 [job-0] INFO  JobContainer - jobContainer starts to do split ...
+2019-11-24 02:04:35.272 [job-0] INFO  JobContainer - Job set Channel-Number to 2 channels.
+2019-11-24 02:04:35.277 [job-0] INFO  JobContainer - DataX Reader.Job [mysqlreader] splits to [1] tasks.
+2019-11-24 02:04:35.278 [job-0] INFO  TxtFileWriter$Job - begin do split...
+2019-11-24 02:04:35.289 [job-0] INFO  TxtFileWriter$Job - splited write file name:[detuo_base_BASE_SJKK_GCJL_ECJGH_DF__c8a5182b_3414_4a2a_8986_45d72767cf2e]
+2019-11-24 02:04:35.289 [job-0] INFO  TxtFileWriter$Job - end do split.
+2019-11-24 02:04:35.289 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] splits to [1] tasks.
+2019-11-24 02:04:35.309 [job-0] INFO  JobContainer - jobContainer starts to do schedule ...
+2019-11-24 02:04:35.315 [job-0] INFO  JobContainer - Scheduler starts [1] taskGroups.
+2019-11-24 02:04:35.317 [job-0] INFO  JobContainer - Running by standalone Mode.
+2019-11-24 02:04:35.327 [taskGroup-0] INFO  TaskGroupContainer - taskGroupId=[0] start [1] channels for [1] tasks.
+2019-11-24 02:04:35.331 [taskGroup-0] INFO  Channel - Channel set byte_speed_limit to -1, No bps activated.
+2019-11-24 02:04:35.332 [taskGroup-0] INFO  Channel - Channel set record_speed_limit to -1, No tps activated.
+2019-11-24 02:04:35.341 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] taskId[0] attemptCount[1] is started
+2019-11-24 02:04:35.342 [0-0-0-writer] INFO  TxtFileWriter$Task - begin do write...
+2019-11-24 02:04:35.342 [0-0-0-writer] INFO  TxtFileWriter$Task - write to file : [/opt/datatom/dana_appendix_api/data/gonganju/detuo_base_BASE_SJKK_GCJL_ECJGH_DF/detuo_base_BASE_SJKK_GCJL_ECJGH_DF__c8a5182b_3414_4a2a_8986_45d72767cf2e]
+2019-11-24 02:04:35.345 [0-0-0-reader] INFO  CommonRdbmsReader$Task - Begin to read record by Sql: [select REPLACE(REPLACE(JLBH, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(XZQH, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(KKBH, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(CDBH, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(HPHM, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(HPZL, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(JGSJ, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(SBBH, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(CDFX, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(XSZT, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(TPLX, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(TZTP, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(QJTP, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(RKSJ, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(YZSJ, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(SJCZ, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(SJLY, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(DWD_LOADTIME, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(DWD_UPDATETIME, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(DWD_YXBZ, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(DT, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(JHPT_UPDATE_TIME, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(JHPT_DELETE, CHAR(10), '\u200b'), CHAR(13),'\u200c') from detuo_base.BASE_SJKK_GCJL_ECJGH_DF where (JHPT_UPDATE_TIME >= DATE_SUB(STR_TO_DATE(20191124,'%Y%m%d'),INTERVAL 2 DAY) and JHPT_UPDATE_TIME <  DATE_SUB(STR_TO_DATE(20191124,'%Y%m%d'),INTERVAL 1 DAY))
+] jdbcUrl:[jdbc:mysql://172.27.148.98:3306/detuo_base?yearIsDateType=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&rewriteBatchedStatements=true].
+2019-11-24 02:04:35.558 [0-0-0-reader] INFO  CommonRdbmsReader$Task - Finished read record by Sql: [select REPLACE(REPLACE(JLBH, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(XZQH, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(KKBH, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(CDBH, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(HPHM, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(HPZL, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(JGSJ, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(SBBH, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(CDFX, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(XSZT, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(TPLX, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(TZTP, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(QJTP, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(RKSJ, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(YZSJ, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(SJCZ, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(SJLY, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(DWD_LOADTIME, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(DWD_UPDATETIME, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(DWD_YXBZ, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(DT, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(JHPT_UPDATE_TIME, CHAR(10), '\u200b'), CHAR(13),'\u200c'),REPLACE(REPLACE(JHPT_DELETE, CHAR(10), '\u200b'), CHAR(13),'\u200c') from detuo_base.BASE_SJKK_GCJL_ECJGH_DF where (JHPT_UPDATE_TIME >= DATE_SUB(STR_TO_DATE(20191124,'%Y%m%d'),INTERVAL 2 DAY) and JHPT_UPDATE_TIME <  DATE_SUB(STR_TO_DATE(20191124,'%Y%m%d'),INTERVAL 1 DAY))
+] jdbcUrl:[jdbc:mysql://172.27.148.98:3306/detuo_base?yearIsDateType=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&rewriteBatchedStatements=true].
+2019-11-24 02:04:35.760 [0-0-0-writer] INFO  TxtFileWriter$Task - end do write
+2019-11-24 02:04:35.842 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] taskId[0] is successed, used[502]ms
+2019-11-24 02:04:35.843 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] completed it's tasks.
+2019-11-24 02:04:45.337 [job-0] INFO  StandAloneJobContainerCommunicator - Total 0 records, 0 bytes | Speed 0B/s, 0 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.000s |  All Task WaitReaderTime 0.000s | Percentage 100.00%
+2019-11-24 02:04:45.337 [job-0] INFO  AbstractScheduler - Scheduler accomplished all tasks.
+2019-11-24 02:04:45.338 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] do post work.
+2019-11-24 02:04:45.338 [job-0] INFO  JobContainer - DataX Reader.Job [mysqlreader] do post work.
+2019-11-24 02:04:45.338 [job-0] INFO  JobContainer - DataX jobId [0] completed successfully.
+2019-11-24 02:04:45.339 [job-0] INFO  HookInvoker - No hook invoked, because base dir not exists or is a file: /opt/datatom/datax/hook
+2019-11-24 02:04:45.340 [job-0] INFO  JobContainer - 
+	 [total cpu info] => 
+		averageCpu                     | maxDeltaCpu                    | minDeltaCpu                    
+		-1.00%                         | -1.00%                         | -1.00%
+                        
+
+	 [total gc info] => 
+		 NAME                 | totalGCCount       | maxDeltaGCCount    | minDeltaGCCount    | totalGCTime        | maxDeltaGCTime     | minDeltaGCTime     
+		 PS MarkSweep         | 0                  | 0                  | 0                  | 0.000s             | 0.000s             | 0.000s             
+		 PS Scavenge          | 0                  | 0                  | 0                  | 0.000s             | 0.000s             | 0.000s             
+
+2019-11-24 02:04:45.340 [job-0] INFO  JobContainer - PerfTrace not enable!
+2019-11-24 02:04:45.341 [job-0] INFO  StandAloneJobContainerCommunicator - Total 0 records, 0 bytes | Speed 0B/s, 0 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.000s |  All Task WaitReaderTime 0.000s | Percentage 100.00%
+2019-11-24 02:04:45.342 [job-0] INFO  JobContainer - 
+任务启动时刻                    : 2019-11-24 02:04:34
+任务结束时刻                    : 2019-11-24 02:04:45
+任务总计耗时                    :                 10s
+任务平均流量                    :                0B/s
+记录写入速度                    :              0rec/s
+读出记录总数                    :                   0
+读写失败总数                    :                   0
+

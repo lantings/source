@@ -115,6 +115,7 @@ def upload():
 		curs3.close()
 		conn.close()
 		pri.ok("table ${source_dbname}.${source_tbname} extracte succeed!")
+		os.system("rm -rf  %s"%path)
 	except Exception as e:
 		s = sys.exc_info()
 		
