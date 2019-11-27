@@ -1,0 +1,9 @@
+1.服务器：172-26-16-90
+2.星环客户端：/opt/datatom/tdhclient/TDH-Client
+3.初始化客户端：source init.sh
+4.进入星环tdh（不同委办局对应不同的hdfs链接，参考各委办局hdfs链接excel文档）
+	beeline -u "jdbc:hive2://172.17.148.189:31326/jiuzhuanju_txt;guardianToken=IdnsKV9cgCVkfF00VEka-M8IUIMT.TDH(各委办局的jdbc链接)"
+5.use jiuzhuanju_orc; 一般用户为委办局_orc
+6.show tables; 列出存在哪些表
+7.show create table jl_license; 列出表结构
+8.将表结构复制到excel中

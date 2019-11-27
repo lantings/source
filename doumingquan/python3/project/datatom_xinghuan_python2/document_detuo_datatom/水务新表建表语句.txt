@@ -1,0 +1,164 @@
+create  table shuiwuju_txt.yshd_bgdjxx_2q
+(
+    djxh             decimal(16, 4) comment '登记序号',
+    shxydm string comment '社会信用代码',
+    bgxm_dm string comment '变更项目代码',
+    bgxmmc string comment '变更项目名称',
+    bgsj             timestamp comment '变更时间',
+    bgqnr            string comment '变更前内容',
+    bghnr            string comment '变更后内容',
+    jhpt_update_time timestamp comment '时间戳',
+    jhpt_delete      int comment '删除标志'
+)ROW FORMAT DELIMITED  FIELDS TERMINATED BY '\u0001'
+lines terminated by '!@#';
+
+create table shuiwuju_txt.yshd_cwsj
+(
+    shxydm string comment '社会信用代码',
+    djxh             decimal(16, 4) comment '登记序号',
+    bbsqq            timestamp comment '所属期起',
+    bbsqz            timestamp comment '所属期止',
+    zczj             decimal(16, 4) comment '资产合计',
+    fzhj             decimal(16, 4) comment '负债合计',
+    hbzj             decimal(16, 4) comment '货币资金',
+    yszk             decimal(16, 4) comment '应收账款',
+    yfzk             decimal(16, 4) comment '应付账款',
+    yysr             decimal(16, 4) comment '营业收入',
+    yycb             decimal(16, 4) comment '营业成本',
+    lrze             decimal(16, 4) comment '利润总额',
+    jhpt_update_time timestamp comment '时间戳',
+    jhpt_delete      int comment '删除标志'
+)ROW FORMAT DELIMITED  FIELDS TERMINATED BY '\u0001'
+lines terminated by '!@#';
+
+create table shuiwuju_txt.yshd_djgsrs_2q
+(
+    djxh             decimal(16, 4) comment '登记序号',
+    shxydm  string comment '社会信用代码',
+    sksssqq          timestamp comment '所属期起',
+    sksssqz          timestamp comment '所属期止',
+    rs               string comment '代缴个税人数',
+    jhpt_update_time timestamp comment '时间戳',
+    jhpt_delete      int comment '删除标志'
+)ROW FORMAT DELIMITED  FIELDS TERMINATED BY '\u0001'
+lines terminated by '!@#';
+
+create table shuiwuju_txt.yshd_djxx_2q
+(
+    djxh             decimal(16, 4) comment '登记序号',
+    shxydm string comment '社会信用代码',
+    nsrmc string comment '纳税人名称',
+    djrq             timestamp comment '登记日期',
+    zzjg_dm string comment '组织结构代码',
+    djzclx string comment '登记注册类型',
+    djzclx_dm string comment '登记注册类型代码',
+    sshy string comment '所属行业',
+    hy_dm string comment '行业代码',
+    zcdz string comment '注册地址',
+    scjydz string comment '生产经营地址',
+    jyfw             string comment '经营范围',
+    cyrs             decimal(16, 4) comment '从业人数',
+    zczbhb           string comment '注册资本（带货币名称）',
+    zzsnslx string comment '增值税纳税人类型',
+    nsrzt string comment '纳税人状态',
+    nsrzt_dm string comment '纳税人状态代码',
+    nsxydj           string comment '纳税信用等级',
+    nsxypjsj         string comment '纳税信用评级时间',
+    kjzdzzmc string comment '会计制度准则名称',
+    kjzdzz_dm string comment '会计制度准则代码',
+    fddbrxm string comment '法定代表人姓名',
+    sfzjlxmc string comment '身份证件类型名称',
+    fddbrsfzjlx_dm string comment '证件类型代码',
+    fddbrsfzjhm string comment '证件号码',
+    fddbrgddh string comment '联系电话',
+    swjgmc string comment '税务机关名称',
+    zgswj_dm string comment '主管税务局代码',
+    jhpt_update_time timestamp comment '时间戳',
+    jhpt_delete      int comment '删除标志'
+)ROW FORMAT DELIMITED  FIELDS TERMINATED BY '\u0001'
+lines terminated by '!@#';
+
+create table shuiwuju_txt.yshd_fpsj_2q
+(
+    djxh             decimal(16, 4) comment '登记序号',
+    shxydm string comment '社会信用代码',
+    ssqq             timestamp comment '所属期起',
+    ssqz             timestamp comment '所属期止',
+    syhs             decimal(16, 4) comment '上游户数',
+    jxzje            decimal(16, 4) comment '进项总金额',
+    xyhs             decimal(16, 4) comment '下游户数',
+    kpzje            decimal(16, 4) comment '开票总金额',
+    jhpt_update_time timestamp comment '时间戳',
+    jhpt_delete      int comment '删除标志'
+)
+ROW FORMAT DELIMITED  FIELDS TERMINATED BY '\u0001'
+lines terminated by '!@#';
+
+create table shuiwuju_txt.yshd_fzxx_2q
+(
+    djxh             decimal(16, 4) comment '登记序号',
+    shxydm string comment '社会信用代码',
+    nsrmc string comment '纳税人名称',
+    djrq             timestamp comment '登记日期',
+    sswflx_dm string comment '税收违法类型代码',
+    wfwzlxmc string comment '违法违章类型名称',
+    wfsd             string comment '违法手段',
+    cfjd             string comment '处罚决定',
+    jhpt_update_time timestamp comment '时间戳',
+    jhpt_delete      int comment '删除标志'
+)
+ROW FORMAT DELIMITED  FIELDS TERMINATED BY '\u0001'
+lines terminated by '!@#';
+
+create table shuiwuju_txt.yshd_jcxx_2q
+(
+    djxh             decimal(16, 4) comment '登记序号',
+    shxydm string comment '社会信用代码',
+    nsrmc string comment '纳税人名称',
+    larq             timestamp comment '立案日期',
+    sswflx_dm string comment '税收违法类型代码',
+    wfwzlxmc string comment '违法违章类型名称',
+    wfsd             string comment '违法手段',
+    cfjd             string comment '处罚决定',
+    jhpt_update_time timestamp comment '时间戳',
+    jhpt_delete      int comment '删除标志'
+)
+ROW FORMAT DELIMITED  FIELDS TERMINATED BY '\u0001'
+lines terminated by '!@#';
+
+create table shuiwuju_txt.yshd_nsxx_2q
+(
+    shxydm string comment '社会信用代码',
+    djxh             decimal(16, 4) comment '登记序号',
+    tjny string comment '统计年月',
+    ynse             decimal(16, 4) comment '应纳税额',
+    yinse            decimal(16, 4) comment '已纳税额',
+    zzs              decimal(16, 4) comment '增值税纳税额',
+    zzsznj           decimal(16, 4) comment '增值税滞纳金',
+    xfs              decimal(16, 4) comment '消费税纳税额',
+    xfsznj           decimal(16, 4) comment '消费税滞纳金',
+    qysds            decimal(16, 4) comment '企业所得税纳税额',
+    qysdsznj         decimal(16, 4) comment '企业所得税滞纳金',
+    grsds            decimal(16, 4) comment '个人所得税纳税额',
+    grsdsznj         decimal(16, 4) comment '个人所得税滞纳金',
+    jhpt_update_time timestamp comment '时间戳',
+    jhpt_delete      int comment '删除标志'
+)
+ROW FORMAT DELIMITED  FIELDS TERMINATED BY '\u0001'
+lines terminated by '!@#';
+
+
+create table shuiwuju_txt.yshd_tzfxx_2q
+(
+    djxh             decimal(16, 4) comment '登记序号',
+    shxydm string comment '社会信用代码',
+    tzfhhhrmc string comment '投资方合伙人名称',
+    tzfjjxz_dm string comment '投资方经济性质代码',
+    tzfjjxz string comment '投资方经济性质',
+    tzbl             decimal(11, 8) comment '投资比例',
+    jhpt_update_time timestamp comment '时间戳',
+    jhpt_delete      int comment '删除标志'
+)
+
+ROW FORMAT DELIMITED  FIELDS TERMINATED BY '\u0001'
+lines terminated by '!@#';

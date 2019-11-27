@@ -1,0 +1,43 @@
+一、接口：
+base_crjdata_ry_czjwryjbxx_df
+{"UnitId":"223372764705329152","UnitName": "gonganju","XinghuanAddress":"jdbc:hive2://172.17.148.189:30925/gonganju_txt_ods;guardianToken=YRzeh1lLQQETtBMYg5Sd-851RZ52.TDH","HttpfsAddress": "http://172.17.148.189:32228/webhdfs/v1/tmp/detuo?op=open&guardian_access_token=YRzeh1lLQQETtBMYg5Sd-851RZ52.TDH","SourceTableName":"dsjzx.base_crjdata_ry_czjwryjbxx_df","XinghuanTableName": "gonganju_txt_ods.base_crjdata_ry_czjwryjbxx_df","MappingList": ["yw_id","czjwrylb","ry_id","rybh","xp_id","pcsyw_id","sf","qfrq","zjyxqz","zjnrs","qzzl","jlsy","qzhm","qzqfrq","qzyxqz","qfjg","lxdh","bz","ryzl","jddwlb","jddw","zdrwbs","hczt","sfyx","lrsj","lrr","zhxgr","tbdwbh","ssbz","jsbz","scbz","lcztbz","czbz","ydbz","zjzl","zjhm","gjdq","xb","csrq","rydylb","ywx","ywm","ywxm","zwxm","crjxxhcbz","rjsy","rjrq","sfzh","pcsmc","jzdhsbz","gzdhsbz","pcsbh","zxsj","jzzt","zxr","zxyy","old_ywid","jwjzd","qzyxcs","rjka","yjjlbz","ssgabbh","zhxgsj","jh_xzqh","sjxzqh","dwd_loadtime","dwd_updatetime","dwd_yxbz","dt","jhpt_update_time","jhpt_delete"],"Exectimes":-1,"WorkflowTime":{"ScheduleType":1,"ScheduleDetail":"05:00"},"AddTimefield":"jhpt_update_time","PrimaryKey":"empty","XinghuanOrcTableName":"gonganju_orc_ods.base_crjdata_ry_czjwryjbxx_df","ColumnType":"date","TargetList":["yw_id","czjwrylb","ry_id","rybh","xp_id","pcsyw_id","sf","qfrq","zjyxqz","zjnrs","qzzl","jlsy","qzhm","qzqfrq","qzyxqz","qfjg","lxdh","bz","ryzl","jddwlb","jddw","zdrwbs","hczt","sfyx","lrsj","lrr","zhxgr","tbdwbh","ssbz","jsbz","scbz","lcztbz","czbz","ydbz","zjzl","zjhm","gjdq","xb","csrq","rydylb","ywx","ywm","ywxm","zwxm","crjxxhcbz","rjsy","rjrq","sfzh","pcsmc","jzdhsbz","gzdhsbz","pcsbh","zxsj","jzzt","zxr","zxyy","old_ywid","jwjzd","qzyxcs","rjka","yjjlbz","ssgabbh","zhxgsj","jh_xzqh","sjxzqh","dwd_loadtime","dwd_updatetime","dwd_yxbz","dt","jhpt_update_time","jhpt_delete"],"Execrate":1}
+
+UnitId：所属委办局ID。存放在stork数据库中，表名：source_info，字段：unitid；
+UnitName：委办局名称。unitname
+XinghuanAddress：星环目标地址；链接信息在excel中存放（委办局对应hdfs链接.xlsx）；
+HttpfsAddress：Httpfs连接地址
+SourceTableName：源表名：用户名.表名
+XinghuanTableName：目标表名 txt表
+MappingList：字段映射 原始表表中字段
+Exectimes：增量定时次数  -1为无限次，1为只跑一次
+WorkflowTime：增量时间周期  ScheduleType 1/2/3对应时间1天/1周/1月  ScheduleDetail 几点执行，格式要求：05:00
+XinghuanOrcTableName：orc表
+AddTimefield：jhpt_update_time  一般来说是交换平台时间，但是也要注意表中没有这个字段，没有这个字段的时候要找其他相近的时间字段
+PrimaryKey：主键 一般为empty
+ColumnType：时间类型 Date/varchar/varchar2/timestamp/datetime
+TargetList:目标表字段 跟mappingList对应
+Execrate:每日增量或者每日全量  1增量 2每天全量
+
+二、通过postman下发工作流
+http://172.26.16.90:12306/dana/workflow/add 新增工作流
+http://172.26.16.90:12306/dana/workflow/delete 删除已有工作流
+	{"Workflowid":"8c22af5c64d25101fe660eef237f4631"}
+后台会自动生成json文件和.py脚本
+
+90服务器
+目录：/opt/datatom/dana_api
+	execute_all：跑全量数据的脚本存放以及datax配置文件的生成，T-2day
+	execute_cfg：增量数据（按天）
+	data：数据目录/opt/datatom/dana_api/data/委办局/tableName，里面还有个split目录，就是将原始文件进行分割，星环支持上传的文件条数为1000W条/文件
+	log：日志目录
+	template：模板文件
+	libs：包
+	script：
+	eg：脚本 python ***.py
+	1.action_datax() 执行datax进行数据抽取，python /opt/datatom/datax/bin/datax.py /opt/datatom/dana_api/execute_all/gonganju_8_103_dsjzx_jg_zfk_user_info.json
+	2.upload() 将抽取的数据放到星环orc表中；其实数据是先将前置库文件抽取到本地（datax可以配置抽取本地文件或者库对库抽取），A.上传文件并加载到星环hdfs，B.将hdfs上的数据load至星环txt表（我们自己建），C.将txt表中的数据insert到星环orc表。
+
+三、ds平台
+ds界面只展示增量脚本，全量脚本需自己后台执行，如果遇到数据量大的表，需要将脚本挂在后台执行（nohup： no hang up 的缩写，就是不挂断的意思；） nohup python name.py &
+ds底层其实就是将后台脚本目录的文件缓存加载到ds界面上，如果要修改增量脚本，需要在后台修改；
+ds工作流开发，需要确认是否上线，默认上线
